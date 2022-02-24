@@ -99,18 +99,30 @@ main #part7 img{width: 100%;}
 main #part7 .part7_article{margin-bottom: 15vw;}
 
 footer .flow{border-top:0.5px solid #000;border-bottom:0.5px solid #000; padding:20px}
-footer .flow h2{margin:1vw;}
-footer .flow a{background-color: #000; color:#fff; display: inline-block;  transition:.3s}
+footer .font_imbue{background-color: #fff; color:#000;}
+footer .font_imbue a{background-color: #000; color:#fff; display: inline-block;  transition:.3s}
 footer .footer_logo{background:url(../images/ELLEblack.svg) no-repeat 50% / contain; text-indent: -9999px; width:80px; margin:2vw 0;}
 footer ul{display: flex; flex-wrap: wrap; font-size: 0.825rem; justify-content: center;}
 footer .footer_info li{margin:1vw 4vw;}
 footer a{ display: inline-block;}
 footer .social_media li a{ margin:0 2vw 5vw;}
 
-.ezkorry-roller { background-color:#fff ; color: #202020; overflow: hidden; white-space: nowrap;}
-.ezkorry-roller h2::after { content: ""; padding: 0 10px; }
-.ezkorry-roller h2 { position:relative;display: inline;}
 footer .font_imbue a{color:#fff; background-color: #000;}
+.ezkorry-roller {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 1vw;
+  }
+  
+  .ezkorry-roller span::after {
+    padding: 0 10px;
+    content: "";
+  }
+  
+  .ezkorry-roller span {
+    position:relative;
+  }
+  
 
 
 @media screen and (min-width:768px) {
@@ -229,8 +241,6 @@ footer .font_imbue a{color:#fff; background-color: #000;}
     footer .font_imbue{font-size: 6.688rem;}
     footer .footer_info{font-size: 1rem; flex-wrap: nowrap;}
     footer .footer_info li{margin:1vw;}
-    
 
-    
     footer .font_imbue a:hover{color:#000; background-color: gold;}
 }
