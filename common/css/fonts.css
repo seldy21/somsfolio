@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: 'Cafe24surround';
+    src: url(../fonts/Cafe24Ssurround.woff2) format('woff2'),url(../fonts/Cafe24Ssurround.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'fugazOne';
+    src:url(../fonts/FugazOne-Regular.woff2) format('woff2'), url(../fonts/FugazOne-Regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'NanumSquare_ac';
+    src:url(../fonts/NanumSquare_acR.woff2) format('woff2'), url(../fonts/NanumSquare_acR.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DMSerif_Regular';
+    src: url(../fonts/DMSerifDisplay-Regular.woff2) format('woff2'), url(../fonts/DMSerifDisplay-Regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NotoSansKR-bold';
+    src: url(../fonts/NotoSansKR-Bold.woff2) format('woff2'), url(../fonts/NotoSansKR-Bold.woff) format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NotoSanKR-medium';
+    src: url(../fonts/NotoSansKR-Medium.woff2) format('woff2'), url(../fonts/NotoSansKR-Medium.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NotoSansKR-regular';
+    src: url(../fonts/NotoSansKR-Regular.woff2) format('woff2'), url(../fonts/NotoSansKR-Regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'pretendard';
+    src: url(../fonts/Pretendard-Regular.woff2) format('woff2'), url(../fonts/Pretendard-Regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'pretendard';
+    src: url(../fonts/Pretendard-Medium.woff2) format('woff2'), url(../fonts/Pretendard-Medium.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'pretendard';
+    src: url(../fonts/Pretendard-SemiBold.woff2) format('woff2'), url(../fonts/Pretendard-SemiBold.woff) format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'pretendard';
+    src: url(../fonts/Pretendard-Bold.woff2) format('woff2'), url(../fonts/Pretendard-Bold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'imbue';
+    src: url(../fonts/Imbue-VariableFont_opsz,wght.woff2) format('woff2'), url(../fonts/Imbue-VariableFont_opsz,wght.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Tagus';
+    src: url(../fonts/TagusXcond-Medium.woff2) format('woff2'), url(../fonts/TagusXcond-Medium.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

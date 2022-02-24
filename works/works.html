@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>works</title>
+    <link rel="shortcut icon" href="../common/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../common/css/normalize.css">
+    <link rel="stylesheet" href="../common/css/fonts.css">
+    <link rel="stylesheet" href="../common/css/works.css">
+</head>
+<body>
+    <header>
+        <h1><a href="../index.html"><img src="../common/images/mainLogo.svg" alt="메인로고"></a></h1>
+    </header>
+    <aside>
+        <h2 class="menu_btn">menu</h2>
+        <ul class="slide_menu">
+            <li><img src="../common/images/flowerLogo2.svg" alt="꽃그림"></li>
+            <li><a href="#">works</a></li>
+            <li><a href="../works/works.html">about&skill</a></li>
+        </ul>
+    </aside>
+    <main>
+        <h2>works</h2>
+        <ul class="contents">
+            <li><a href="work1/work_HLB.html" target="_blank">H　L　B</a></li>
+            <li><a href="work2/work_huvit.html" target="_blank">휴빛 LED</a></li>
+            <li><a href="work3/elle.html" target="_blank">ELLE</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </main>
+    <footer>
+        <p>som's portfolio</p>
+    </footer>
+    <script>
+        const menu=document.querySelector('.menu_btn');
+        const slide=document.querySelector('.slide_menu')
+        menu.addEventListener('click',()=>{
+            slide.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

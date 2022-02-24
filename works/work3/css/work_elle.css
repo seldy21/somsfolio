@@ -1,0 +1,236 @@
+@charset "utf-8";
+
+body{font-family: 'Noto Sans KR';}
+ul{list-style: none; padding: 0;}
+a{text-decoration: none; color: inherit; display: inline-block;}
+h1,h2,h3,h4,p{margin:0;}
+p{word-break:keep-all;}
+
+nav{height: 60px; border-bottom: 0.5px solid #000; position:fixed; width: 100%; top:0;background-color: #fff;z-index: 100;}
+nav .pc_ver{display: none;}
+nav .slide_menu{display: none; position: absolute;top:61px; left:50%; transform: translate(-50%); flex-direction: column; background-color: #fff; width: 100%; z-index: 9999; padding:10px; overflow: hidden; margin: 0;}
+nav .slide_menu li{padding: 20px;}
+nav ul{display: flex; margin-right:4vw;justify-content: end;}
+nav ul li{margin-left: 2.5vw; text-transform: uppercase; font-size: 1.2rem; display: flex; justify-content: center; align-items: center;}
+nav ul .nav_color a{color: red; margin-right: auto; transition: .5s;}
+nav ul .nav_color span{text-transform: lowercase;}
+nav ul img{width: 30px; cursor: pointer;}
+nav ul .menu_pc{display: none;}
+
+.pcImg{display: none;}
+main #part1 .main_logo{background-color: #000; width: 96vw; height: 30vw; display: flex; justify-content: center; align-items: center; margin: calc(6vw + 61px) auto 6vw;}
+main #part1 .main_logo h1{ width:36vw; height:13vw;background: url(../images/ELLEwhite.svg) no-repeat 50% / cover; text-indent: -9999px;} 
+main #part1 .swiper{
+    width: 100%; height: 400px;
+    --swiper-navigation-color:rgba(255, 255, 255,0.6);
+    --swiper-pagination-color:#fff;
+} 
+main #part1 .swiper .swiper-slide{position: relative;} 
+
+main #part1 .swiper .swiper-wrapper{width: 100%; height: 100%;}
+main #part1 .swiper .swiper-wrapper .swiper-slide{width: 100%; height: 100%;}
+main #part1 .swiper .swiper-wrapper .bg1{background: url(../images/main_model.jpg) no-repeat 50% / cover;}
+main #part1 .swiper .swiper-wrapper .bg2{background: url(../images/main_miju.jpg) no-repeat 50% / cover;}
+main #part1 .swiper .swiper-wrapper .bg3{background: url(../images/main_cafe.jpg) no-repeat 100% / cover;}
+main #part1 .swiper .swiper-wrapper .bg4{background: url(../images/main_cos.jpg) no-repeat 50% / cover;}
+main #part1 .swiper .main_txt {color: #000;width: 85%;display: flex; flex-direction: column; justify-content: end;color: #fff; left: 3vw; word-break: keep-all;position:absolute; bottom:30px;} 
+main #part1 .swiper #main_txt h2{font-size: 1.518rem;}
+main #part1 .swiper #main_txt p{font-size: 1rem; margin: 9px 0;}
+.font_imbue{font-family: 'imbue',바탕,serif; font-weight: 500; margin:12vw 0 6vw; font-size: 1.7rem; text-align: center; word-break:keep-all;}
+main #part1 .latest{width: 85vw; display: flex; flex-flow:wrap column; align-items: center; margin:0 auto 6vw;}
+main #part1 .latest img{width: 100%; margin-bottom:9px;}
+main #part1 .latest>div{margin-bottom:15vw;}
+p.expln{font-size: 1.1rem; margin-top:2vw;}
+.tagus20{font-family: 'Tagus','맑은 고딕',돋움,sans-serif; font-weight: 400; font-size: 1.7rem;}
+main .weekly img{width: 68vw; margin:0 auto 9px; display: block;}
+main .weekly .weekly_img a{display: block;}
+main .weekly p{width: 68vw; margin:0 auto 15vw;}
+
+main #part2{background-color: #000; display: flex; flex-wrap: wrap;justify-content: center;color:#fff; margin:9vw 0;}
+main #part2 h2{font-size: 1.1rem; padding-top:3vw; width: 100%; text-align: center;}
+main #part2 .music{width: 40%;margin:2vw auto 4vw;}
+main #part2 .music a{display: flex; flex-direction: column;}
+main #part2 .music img{width: 100%;}
+main #part2 .music p{font-size: 0.9rem; width: 39vw; margin-top:5px}
+.tagus42{font-family: 'Tagus','맑은 고딕',돋움,sans-serif; font-size: 2.1rem;}
+main #part3{width: 88vw; margin: 12vw auto; border-bottom: #000 solid 0.5px;}
+main #part3 .horoscope{margin: 0 auto; padding-bottom: 9vw; border-bottom: 0.5px solid #000;}
+main #part3 .horos_expln{display: flex; padding-top:10px;}
+main #part3 .txt{margin-left: 3vw; display: flex; flex-direction: column; justify-content: center;}
+main #part3 #horos_name{font-size: 0.9rem; text-align: right;}
+main #part3 .horos_expln p{font-size: 1.1rem; line-height: 1.4; margin:6px 0 12px; word-break: break-all;}
+main #part3 .horos_expln img{width: 23vw; height:23vw;border-radius: 50%; border:0.5px solid #000;}
+main #part3 .horos_expln>a{display: flex; align-items: center;}
+
+main #part3 .more{font-weight: 500; text-align: right;}
+main #part3 .fashion_1{padding: 15vw 0;}
+main #part3 img{ width: 100%;}
+main #part3 .expln{margin-bottom:10vw;}
+main #part3 .culture{padding-bottom:7vw;}
+
+main #part4{margin: 12vw 0 25vw 7vw; word-break: keep-all; overflow: hidden;}
+main #part4 h3{font-size: 3.1rem; font-family: 'tagus','맑은 고딕',돋움,sans-serif; margin-bottom:3px;}
+main #part4 a{display: flex; flex-direction: column;}
+main #part4>a{justify-content: center; width: 100%;}
+main #part4 h4{font-size: 0.938rem;}
+main #part4 .part4_txt{margin-bottom:3vw;}
+main #part4 .mobileImg{width: 63vw;}
+
+main #part5 {width: 100%;}
+main #part5 h3{margin-left:1vw; }
+main #part5 .video_box{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+main #part5 .video{height: 45vh;width: 90%;}
+main #part5 .video .wrapper{ width: 100%;}
+main #part5 .video .wrapper .player{height:100%;width: 100%;}
+
+
+main #part6{width: 88vw; margin: 0 auto; padding:19vw 0 13vw; border-bottom:0.5px solid #000;}
+main #part6 h3{display: none;}
+main #part6 h4{font-size: 1.25rem;}
+main #part6 img{width: 15vw; height:15vw;border-radius: 50%;}
+main #part6 article{border:1px solid #000; margin:0 auto; padding:7vw;}
+main #part6 article.bg_blck{background-color: #000; color: #fff;}
+main #part6 p{display: flex; margin-top:8vw;}
+main #part6 p a{padding-left:3vw;}
+
+main #part7{padding:13vw 0 8vw; width: 88vw; margin:0 auto;}
+main #part7 h4{margin:4px 0 6px;}
+main #part7 img{width: 100%;}
+main #part7 .part7_article{margin-bottom: 15vw;}
+
+footer .flow{border-top:0.5px solid #000;border-bottom:0.5px solid #000; padding:20px}
+footer .flow h2{margin:1vw;}
+footer .flow a{background-color: #000; color:#fff; display: inline-block;  transition:.3s}
+footer .footer_logo{background:url(../images/ELLEblack.svg) no-repeat 50% / contain; text-indent: -9999px; width:80px; margin:2vw 0;}
+footer ul{display: flex; flex-wrap: wrap; font-size: 0.825rem; justify-content: center;}
+footer .footer_info li{margin:1vw 4vw;}
+footer a{ display: inline-block;}
+footer .social_media li a{ margin:0 2vw 5vw;}
+
+.ezkorry-roller { background-color:#fff ; color: #202020; overflow: hidden; white-space: nowrap;}
+.ezkorry-roller h2::after { content: ""; padding: 0 10px; }
+.ezkorry-roller h2 { position:relative;display: inline;}
+footer .font_imbue a{color:#fff; background-color: #000;}
+
+
+@media screen and (min-width:768px) {
+    nav{ display:flex; height: 96px; width: 100%; transition: .5s;}
+    nav ul{width: 50%;}
+    nav .pc_ver{display:block; display: flex; width: 70%; margin:0; justify-content: space-around;}
+    nav .pc_ver>li>a{ font-size: 1.3rem; transition:.5s;}
+    nav .pc_ver>li>a:hover{color:red;}
+    nav ul .nav_color:hover a{color: #000;}
+    nav i{cursor: pointer; transition: .5s;}
+    nav i:hover{color:red;}
+    nav ul .menu{display: none;}
+    nav ul .menu_pc{display:flex;width: 40px; justify-content: center; align-items: center; }
+    nav.active{height: 60px; background-color: #000; color:#fff;}
+    nav.active>ul .nav_color:hover a{color:#fff;}
+    nav.active .slides{color: #000;top:61px;}
+    .pc_ver>li{flex-direction: column;overflow: hidden;width: 20%; margin:0;}
+    .pc_ver .slides{flex-direction: column; position:fixed; top:97px; background-color: #efefef; margin:auto; display:none;width: 190px; height: 400px;}
+    .pc_ver .slides li{margin:25px auto; font-size: 0.7rem;transition: .2s;}
+    .pc_ver .slides li:hover{font-weight: bold;}
+    .login, .signup{ transition:.5s;}
+    .login:hover, .signup:hover{color: red;}
+
+    .pcImg{display: block;}
+    .tagus20{font-size: 2rem;}
+    .tagus42{font-size: 3rem;}
+    p.expln{font-size: 1.35rem; margin-top:0.5vw;}
+    .font_imbue{margin: 1vw 0;}
+    .slide_menu{display: none;}
+    main #part1{display: flex; flex-wrap: wrap ; justify-content: center;}
+    main #part1 .latest{order:1; flex-direction: row; width:96vw; margin:calc(2vw + 96px) 0 5vw; justify-content: center; align-items: center;}
+    main #part1 .latest>div{margin-bottom:2vw;}
+    main #part1 .latest h2{width: 100%; font-size: 3.5rem;}
+    main #part1 .latest>div{width:27vw; padding:0 2vw; border-left: #000 1px solid; height: 26vw;}
+    main #part1 .latest .valentine{border-left: none;}
+    main #part1 .latest img:hover{opacity: 0.8;}
+    main #part1 .latest img{transition: .5s;}
+    main #part1 .main_logo{order:2; margin:0 auto 5vw; height:20vw}
+    main #part1 .weekly{order:3; width: 30%; height: 41vw;  box-sizing: border-box; padding: 0 2vw;}
+    main #part1 .weekly h2{font-size: 2.375rem; text-align: left;}
+    main #part1 .weekly h2 span{font-size: 3.063rem;display: block;}
+    main #part1 .weekly img{order:3; width: 100%; margin:0;}
+    main #part1 .weekly p{font-size: 1.375rem; width: 100%; margin:30px 0 0 0;}
+    main #part1 .weekly a{ transition: .5s;}
+    main #part1 .weekly a:hover{opacity: 0.8;}
+    main #part1 .swiper{order:4; width: 70%; box-sizing: border-box;transition: .5s; height: 35vw;}
+    main #part1 .swiper a{border-left:1px solid #000;}
+    main #part1 .swiper:hover{opacity: 0.8;}
+    main #part1 .swiper .main_txt{bottom:50px}
+    main #part1 .swiper .main_txt h2{font-size: 2.625rem;}
+    main #part1 .swiper .main_txt p{font-size: 1.563rem; margin-top: 20px;}
+
+    main #part2{margin: 2vw 3vw;}
+    main #part2 h2{font-size: 2.375rem;}
+    main #part2 .music p{font-size: 1.25rem; margin-top: 1vw;}
+    main #part2 .music a{transition: .5s;}
+    main #part2 .music a:hover{opacity: 0.8;}
+
+    main #part3{display: flex; flex-wrap: wrap; width: 90vw; margin-bottom:5vw;}
+    main #part3 .horoscope{width: 64%; box-sizing: border-box; padding: 0 2vw 0 0; border-bottom: none;}
+    main #part3 .horoscope h3{margin-bottom: 2vw;}
+    main #part3 .horos_expln .txt{margin-left: 1vw;}
+    main #part3 .horos_expln img{width: 13vw; height: 13vw;}
+    main #part3 .horos_expln .more{font-weight: 600;}
+    main #part3 img{transition:.5s;}
+    main #part3 img:hover{opacity: 0.8;}
+    main #part3 #horos_name {font-size: 1.563rem;}
+    main #part3 .horos_expln p {font-size: 1.675rem;line-height: 1.5; margin:1vw 0; word-break: normal;}
+    main #part3 .fashion_1{width: 36%; box-sizing: border-box; padding:0 0 0 2vw;margin-bottom:2.5vw; border-left: #000 solid 1px;}
+    main #part3 h4{ font-size: 1.875rem; margin: 1vw 0;}
+    main #part3 p.expln{margin:0; padding-bottom:2vw}
+    main #part3 .culture{width: 100%;padding:4vw 0 6vw; display: flex;}
+    main #part3 .culture .culture_img{width:64%;}
+    main #part3 .culture .culture_img a{display: block;}
+    main #part3 .culture .culture_img a img{width: 100%;}
+    main #part3 .culture p.expln{margin-top:1vw;}
+    main #part3 .culture .part3_expln{width:36%;box-sizing: border-box; padding-left:2vw;}
+    main #part3 .culture h4{font-size: 2rem;}
+
+    main #part4{margin:0 0 10vw 7vw; display: flex; flex-wrap: wrap;}
+    main #part4 .part4_txt{width: 51%;}
+    main #part4 h3{font-size: 6.875rem;}
+    main #part4 h4{font-size: 2.8rem;}
+    main #part4 p.expln{font-size: 1.875rem; margin-bottom:0; margin-right: 10px;}
+    main #part4 img{width:47vw; transition: .5s;}
+    main #part4 img:hover{opacity: 0.8;}
+    main #part4>a{justify-content: center; width: 49%;}
+    
+    main #part5 {overflow: hidden;}
+    main #part5 h3{margin-left:6vw;}
+    main #part5 .video_box{display: flex; flex-direction:row;margin:60px 0 150px; height: auto; align-items: flex-start;}
+    main #part5 .video {width: 100%; height: auto; margin: 10px 20px;}
+    main #part5 .wrapper{width: 100%; margin-bottom: 10px;}
+    main #part5 p{font-size: 1.158rem;}
+
+
+    main #part6{padding:0; overflow: hidden; position: relative;height: 22vw;padding: 5vw 0;}
+    main #part6 .article_wrapper{display: flex; position: relative; }
+    main #part6 article{width: 30vw; padding:3vw; height: 180px; margin:0; position: absolute;}
+
+    .article_title{height: 40%;}
+    main #part6 img{width: 4vw; height: 4vw;}
+    main #part6 p{ margin-top:0;}
+    main #part6 #article1{left:9vw; top:0;}
+    main #part6 #article2{left:21vw; top:0; background-color: #fff;}
+    main #part6 #article3{left:33vw; top:0;}
+    main #part6 #article4{left:45vw; top:0; background-color: #fff;}
+
+    main #part7{display: flex; padding-top:10vw;}
+    main #part7 .part7_article{margin:0 1vw;}
+    main #part7 h4{font-size: 2.25rem;}
+    main #part7 p{font-size: 1.125rem;}
+    main #part7 img{transition:.5s;}
+    main #part7 img:hover{opacity: 0.7;}
+
+    footer .font_imbue{font-size: 6.688rem;}
+    footer .footer_info{font-size: 1rem; flex-wrap: nowrap;}
+    footer .footer_info li{margin:1vw;}
+    
+
+    
+    footer .font_imbue a:hover{color:#000; background-color: gold;}
+}
