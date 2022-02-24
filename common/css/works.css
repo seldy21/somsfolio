@@ -2,19 +2,21 @@
 
 body{background-color: #939FCD ;height: 115vh;}
 a{color: #fff; text-decoration: none; display: block;}
-header h1{background-color: #EDF6E5; width: 85%; height:15vh;margin:0; display: flex; align-items: center; position: fixed; top:0;}
+header h1{background-color: #EDF6E5; width: 85%; height:15vh;margin:0; display: flex; align-items: center; position: fixed; top:0;z-index: 10;}
 header h1 img{transition: .5s;}
 header h1 a:hover img{transform: scale(1.2);}
 header h1 img{width: 110px; margin-left: 2vw;}
-aside h2{background-color: #F38BA0; height: 15vh; margin: 0 0 0 85%; display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'NanumSquare_ac',sans-serif; font-size: 2.8rem;position: fixed; width: 15%;}
+aside h2{background-color: #F38BA0; height: 15vh; margin: 0 0 0 85%; display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'NanumSquare_ac',sans-serif; font-size: 2.8rem;position: fixed; width: 15%; z-index: 10;}
 aside h2:hover{cursor: pointer;}
+aside .slide_wrapper{background-color: rgba(0,0,0,0.6); width: 100%; height: 100vh;position: fixed; top:15vh; right: -100%; transition: 1.5s;}
 aside ul{
     list-style: none; margin:0;padding: 0; display: flex; flex-flow: column wrap; align-items: end; transition: .5s; z-index: 10;
 }
-aside ul li{ width:60vw; overflow:hidden;display: flex; justify-content: center; align-items: center; font-size: 7rem; font-family: 'fugazOne',sans-serif; font-weight: 400; position: fixed; right:-60vw;transition: .5s;}
+aside ul li{ width:60vw;display: flex; justify-content: center; align-items: center; font-size: 7rem; font-family: 'fugazOne',sans-serif; font-weight: 400; position: fixed; right:-60vw;transition: .5s;}
 aside ul li a{transition: .5s;}
 aside ul a:hover{color:#2A285E;}
-aside ul.active li{right:0;}
+aside .slide_wrapper.active{right:0;}
+aside .slide_wrapper.active li{right:0;}
 aside ul li:nth-child(1){background-color: #FFBCBC; height: 28.33vh;transition: .6s; top:15vh;}
 aside ul img{width: 140px;}
 aside ul li:nth-child(2){background-color: #F38BA0; height: 28.33vh;top:43.33vh;transition: .6s .1s;}
