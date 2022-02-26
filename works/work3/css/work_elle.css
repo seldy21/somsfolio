@@ -80,7 +80,7 @@ main #part5 {width: 100%;}
 main #part5 h3{margin-left:1vw; }
 main #part5 .video_box{display: flex; flex-direction: column; justify-content: center; align-items: center;}
 main #part5 .video{height: 45vh;width: 90%;}
-main #part5 .video .wrapper{ width: 100%;}
+main #part5 .video .wrapper{}
 main #part5 .video .wrapper .player{height:100%;width: 100%;}
 
 
@@ -98,30 +98,28 @@ main #part7 h4{margin:4px 0 6px;}
 main #part7 img{width: 100%;}
 main #part7 .part7_article{margin-bottom: 15vw;}
 
-footer .flow{border-top:0.5px solid #000;border-bottom:0.5px solid #000; padding:20px}
-footer .font_imbue{background-color: #fff; color:#000;}
-footer .font_imbue a{background-color: #000; color:#fff; display: inline-block;  transition:.3s}
+footer .font_imbue{background-color: #fff; color:#000;font-size: 3rem;}
+footer .font_imbue a{background-color: #000; color:#fff; display: inline-block;  transition:.3s;}
 footer .footer_logo{background:url(../images/ELLEblack.svg) no-repeat 50% / contain; text-indent: -9999px; width:80px; margin:2vw 0;}
 footer ul{display: flex; flex-wrap: wrap; font-size: 0.825rem; justify-content: center;}
 footer .footer_info li{margin:1vw 4vw;}
 footer a{ display: inline-block;}
 footer .social_media li a{ margin:0 2vw 5vw;}
 
-footer .font_imbue a{color:#fff; background-color: #000;}
 .ezkorry-roller {
-    overflow: hidden;
-    white-space: nowrap;
-    margin-right: 1vw;
-  }
-  
-  .ezkorry-roller span::after {
-    padding: 0 10px;
-    content: "";
-  }
-  
-  .ezkorry-roller span {
-    position:relative;
-  }
+overflow: hidden;
+white-space: nowrap;
+margin-right: 1vw;border-top:0.5px solid #000;border-bottom:0.5px solid #000; padding:20px;
+}
+
+.ezkorry-roller span::after {
+  padding: 0 10px;
+  content: "";
+}
+
+.ezkorry-roller span {
+  position:relative;
+}
   
 
 
