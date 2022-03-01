@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-body{font-family: 'Noto Sans KR';}
+body{font-family: 'Noto Sans KR',돋움,sans-serif;}
 ul{list-style: none; padding: 0;}
 a{text-decoration: none; color: inherit; display: inline-block;}
 h1,h2,h3,h4,p{margin:0;}
@@ -80,7 +80,6 @@ main #part5 {width: 100%;}
 main #part5 h3{margin-left:1vw; }
 main #part5 .video_box{display: flex; flex-direction: column; justify-content: center; align-items: center;}
 main #part5 .video{height: 45vh;width: 90%;}
-main #part5 .video .wrapper{}
 main #part5 .video .wrapper .player{height:100%;width: 100%;}
 
 
