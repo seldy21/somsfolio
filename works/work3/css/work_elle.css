@@ -105,20 +105,17 @@ footer .footer_info li{margin:1vw 4vw;}
 footer a{ display: inline-block;}
 footer .social_media li a{ margin:0 2vw 5vw;}
 
+:root{--carousel-speed:9s;}
 .ezkorry-roller {
-overflow: hidden;
 white-space: nowrap;
 margin-right: 1vw;border-top:0.5px solid #000;border-bottom:0.5px solid #000; padding:20px;
+animation: autoplay var(--carousel-speed) linear infinite;
+}
+@keyframes autoplay {
+    0% { transform: translate3d(0, 0, 0) }
+    100% { transform: translate3d(-50%, 0, 0) }
 }
 
-.ezkorry-roller span::after {
-  padding: 0 10px;
-  content: "";
-}
-
-.ezkorry-roller span {
-  position:relative;
-}
   
 
 
@@ -235,7 +232,7 @@ margin-right: 1vw;border-top:0.5px solid #000;border-bottom:0.5px solid #000; pa
     main #part7 img{transition:.5s;}
     main #part7 img:hover{opacity: 0.7;}
 
-    footer .font_imbue{font-size: 6.688rem;}
+    footer .font_imbue{font-size: 5rem;}
     footer .footer_info{font-size: 1rem; flex-wrap: nowrap;}
     footer .footer_info li{margin:1vw;}
 

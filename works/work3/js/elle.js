@@ -71,35 +71,3 @@ $('#article3').on('mouseenter',()=>{
 $('#article3').on('mouseleave',()=>{
   $('#article4').stop().animate({'left':'45vw'},600)
 });
-
-//footer 흐르는 글자
-Zepto(function($) {
-  $(window).on('load', function() {
-    $.each($(".ezkorry-roller"), function(index, item) {
-      const wrapper = $("<div />", { class:"ezkorry-roller-wrapper"});
-      const roller = $(item);
-      roller.append(wrapper);
-      const span = roller.find('span').first();
-      wrapper.append(span);
-  
-      const span_width = span.get(0).offsetWidth;
-      const max_width = roller.width() + span_width;
-      let inner_width = span_width;
-
-      while(max_width > inner_width) {
-        wrapper.append(span.clone());
-        inner_width += span_width;
-      }
-      
-      anime({
-        targets: wrapper.get(0),
-        translateX: {
-          value: '-=' + span_width + 'px',
-          duration: 5000
-        },
-        loop: true,
-        easing: 'linear'
-      });
-    });
-  })
-});
