@@ -23,6 +23,7 @@ main h2{font-size: 25px; font-family: 'fugazOne',sans-serif; padding:3vw; displa
 main .gnb{position: absolute; right: 0; top:0; z-index: 10;}
 main .gnb ul{display: flex; margin:1vw}
 main .gnb ul li{margin:1vw; font-size: 14px; font-weight: 600;}
+main .gnb ul li .thisPage{display: none;}
 main .gnb ul li .work_title{font-size: 12px; font-weight: 400;}
 .main_videoWrapper{display: flex; justify-content: center; background-color: #939FCD; width: 95%; margin:0 auto; height: 40vw; position: relative;}
 video{width: 70%; position: absolute; bottom:0;}
@@ -48,8 +49,8 @@ main .design .font_EN{display: flex;}
 main .design .font_EN ul li{font-family: 'DMSerif_Regular',serif;}
 main .design .font_KR ul li:nth-child(2){font-weight: 500;}
 main .design .font_KR ul li:nth-child(3){font-weight: 600;}
-main .design .design_txt{font-size: 14px;}
-main .design .design_txt p{margin-bottom: 2.5vw; word-break: keep-all;}
+main .design .design_txt{font-size: 14px; list-style: disc;}
+main .design .design_txt li{margin-bottom: 2.5vw; word-break: keep-all;}
 main .pageImg{position: relative; height: 55vw;}
 main .pageImg .imgbox{width: 40vw; height: 40vw; text-indent: -9999px;position: absolute; box-shadow: 1px 1px 30px #b5b6b9;}
 main .pageImg .box1{ background: url(../../works/images/fullPage_HLB.png) no-repeat 100% 100% / cover;left: 40%; top:15vw;}
@@ -58,14 +59,17 @@ main .pageImg .box2{ background: url(../../works/images/fullPage_HLB.png) no-rep
 main .publishing{width: 90%; margin:10vw auto;}
 main .publishing .keyword{margin-bottom:5vw;}
 main .publishing .keyword p{font-weight: 600;}
-main .publishing .publ_txt p{font-size: 14px; margin-bottom: 2.5vw; word-break: keep-all;}
+main .publishing .publ_txt {list-style: disc;}
+main .publishing .publ_txt li{font-size: 14px; margin-bottom: 2.5vw; word-break: keep-all;}
 
 main .comment{width: 90%; margin:10vw auto;}
+main .comment strong{background-color: #FFBCBC;}
 main .comment p{margin-bottom: 3vw; word-break: keep-all;}
 
-main .site_motto{margin-bottom:10vw;}
+main .site_motto{margin-bottom:10vw; display: flex; justify-content: center; align-items: center; flex-direction: column;}
 main .site_motto p{font-size: 20px; font-weight: 600; text-align: center;}
 main .site_motto p:nth-child(2){font-size: 25px; border:1px solid #FFBCBC; width: 50%; margin: 2vw auto 0; border-radius: 10px;}
+
 
 .toTop{background: url(../../works/images/arrow_back_black_24dp.svg) no-repeat 100% / cover; width: 40px; height: 40px; transform: rotate(90deg); text-indent: -9999px; position: fixed; bottom:4vw; right:-50px; transition: .5s;}
 .toTop.show{right:4vw;}
@@ -91,10 +95,12 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
 
     main{margin-top:15vh;}
     main h2{font-size: 30px; padding:3vw 4vw;}
-    main .gnb{right: 5vw;}
+    main .gnb{left: 15vw;}
+    
+    main .gnb ul li .thisPage{display: block; color: #939FCD;}
     main .gnb ul li{margin:1vw; font-size: 18px;}
     main .gnb ul li a{transition: .3s;}
-    main .gnb ul li:hover a{color:#F38BA0;}
+    main .gnb ul li a:hover{color:#F38BA0;}
     main .gnb ul li .work_title{font-size: 14px;}
 
     .main_videoWrapper{height: 35vw; z-index: -9;}
@@ -103,7 +109,7 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
     h3{font-size: 40px; margin-bottom:2vw;}
     main .project_goal .project_wrapper{flex-direction: row;}
     main .project_goal .project_goalExpl{width: 75%;}
-    main .project_goal .project_goalExpl p{font-size: 20px; margin:0 4vw 2vw 0;}
+    main .project_goal .project_goalExpl p{font-size: 18px; margin:0 4vw 2vw 0;}
     main .project_goal .project_goalShort{justify-content: flex-start; padding:0;}
     main .project_goal .project_goalShort .gray{font-size: 16px;}
     main .project_goal .project_goalShort li{width: 50%; font-size: 20px;}
@@ -111,13 +117,13 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
     main .design{width: 70%;}
     .keyword p{font-size: 25px;}
     main .design .design_wrapper{display: flex;}
-    main .design .keyword{width: 50%;}
+    main .design .keyword{margin-right: 15vw;}
     main .design .color{justify-content: flex-start;}
     main .design .color li{width: 100px; height: 100px; margin: 0 1vw; line-height: 100px}
     main .design .font_KR p,main .design .font_EN p{font-size: 25px; line-height: 50px; margin-right: 1vw;}
     main .design .font li{font-size: 30px;}
     main .design .design_txt{font-size: 18px;}
-    main .design .design_txt p{margin-bottom: 1vw}
+    main .design .design_txt li{margin-bottom: 1vw}
 
     main .pageImg { height: 40vw;}
     main .pageImg .imgbox{width: 26vw; height: 25vw; }
@@ -127,7 +133,7 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
     main .publishing{width: 70%;}
     main .publishing .keyword{display: flex;}
     main .publishing .keyword p{margin-right:2vw; font-size: 25px;}
-    main .publishing .publ_txt p{font-size: 18px; margin-bottom: 1vw;}
+    main .publishing .publ_txt li{font-size: 18px; margin-bottom: 1vw;}
 
     
     main .comment{width:70%;}
@@ -156,5 +162,5 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
         transform-origin: bottom left;
     }
     
-
+    .toTop:hover{cursor: pointer;}
 }

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/works.css">
 
     <script src="../../common/js/aos.js"></script>
+    <script src="../../common/js/core.js"></script>
 </head>
 <body>
     <header>
@@ -37,15 +38,19 @@
         <div class="gnb">
             <ul>
                 <li>
-                    <div class="work_title">work</div>
+                    <div class="work_title thisPage">You are here</div>
+                    <p>HLB</p>
+                </li>
+                <li>
+                    <div class="work_title">view more</div>
                     <a href="work_huvit.html">HUVIT LED</a>
                 </li>
                 <li>
-                    <div class="work_title">work</div>
+                    <div class="work_title">view more</div>
                     <a href="work_elle.html">ELLE</a>
                 </li>
                 <li>
-                    <div class="work_title">work</div>
+                    <div class="work_title">view more</div>
                     <a href="work_gaguDoctor.html">GAGU DOCTOR</a>
                 </li>
             </ul>
@@ -106,14 +111,14 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="design_txt">
-                        <p>· 제약회사의 안정적이고 전문적인 느낌을 메인 화면에 제시.</p>
-                        <p>· 회사의 로고 색상(주황색)으로 마우스 오버 색상 지정</p>
-                        <p>· 주황색의 다소 가벼운 느낌에 남색으로 균형을 맞춤</p>
-                        <p>· 배경 이미지가 있는 섹션에서 배경 이미지를 크게 방해하지 않으면서 하얀색 글자의 가독성을 높이기 위해 남색에 불투명도를 부여하여 텍스트 부분의 배경색 적용.</p>
-                        <p>· 전체 메뉴를 보는 항목은 불필요하므로 삭제.</p>
-                        <p>· 각 섹션의 움직임은 부드러움을 강조하기 위해 여유있게 1초로 설정.</p>
-                        <p>· News&Notice 부분의 슬라이드는 화살표를 누르면 무한으로 반복. 다음 컨텐츠가 있음을 사용자게에 쉽게 안내하기 위하여 한 번에 3.5개의 슬라이드가 보이게 제작.</p>
+                    <ul class="design_txt">
+                        <li>제약회사의 안정적이고 전문적인 느낌을 메인 화면에 제시.</li>
+                        <li>회사의 로고 색상(주황색)으로 마우스 오버 색상 지정</li>
+                        <li>주황색의 다소 가벼운 느낌에 남색으로 균형을 맞춤</li>
+                        <li>배경 이미지가 있는 섹션에서 배경 이미지를 크게 방해하지 않으면서 하얀색 글자의 가독성을 높이기 위해 남색에 불투명도를 부여하여 텍스트 부분의 배경색 적용.</li>
+                        <li>전체 메뉴를 보는 항목은 불필요하므로 삭제.</li>
+                        <li>각 섹션의 움직임은 부드러움을 강조하기 위해 여유있게 1초로 설정.</li>
+                        <li>News&Notice 부분의 슬라이드는 화살표를 누르면 무한으로 반복. 다음 컨텐츠가 있음을 사용자게에 쉽게 안내하기 위하여 한 번에 3.5개의 슬라이드가 보이게 제작.</li>
                     </div>
                 </div>
             </div>
@@ -129,24 +134,26 @@
                 <p>#시멘틱마크업</p>
                 <p>#Javascript</p>
                 <p>#flexible_box</p>
+                <p>#vegas.js</p>
+                <p>#aos.js</p>
             </div>
-            <div class="publ_txt">
-                <p>· 처음으로 보이는 메인 이미지에 vegas.js파일을 사용하여 동영상 효과 부여</p>
-                <p>· 각 섹션에 해당하는 부분은 창 양 끝에 숨겨있다가 해당 스크롤에 도달하면 자연스럽게 등장. aos.js 파일 사용.
-                </p>
-                <p>· 섹션 제목 왼쪽에 붙는 긴 선은 css의 padding 값과 border 값으로 제어.</p>
-                <p>· 대부분의 정렬에 flex 사용.</p>
-                <p>· 웹 브라우저에 맞춰 제작하였으므로 body에는 min-width값으로 1200px 적용.</p>
+            <ul class="publ_txt">
+                <li>처음으로 보이는 메인 이미지에 vegas.js파일을 사용하여 동영상 효과 부여</li>
+                <li>각 섹션에 해당하는 부분은 창 양 끝에 숨겨있다가 해당 스크롤에 도달하면 자연스럽게 등장. aos.js 파일 사용.
+                </li>
+                <li>섹션 제목 왼쪽에 붙는 긴 선은 css의 padding 값과 border 값으로 제어.</li>
+                <li>대부분의 정렬에 flex 사용.</li>
+                <li>웹 브라우저에 맞춰 제작하였으므로 body에는 min-width값으로 1200px 적용.</li>
             </div>
         </div>
-        <div class="comment" data-aos="zoom-in-down" data-aos-duration="1000">
-            <p>HBL 제약 웹 페이지 제작은 제가 처음으로 디자인과 퍼블리싱을 온전히 자력으로 해낸 프로젝트입니다. </p>
+        <div class="comment">
+            <p>HBL 제약 웹 페이지 제작은 제가 처음으로 <strong>디자인과 퍼블리싱을 100% 자력</strong>으로 해낸 프로젝트입니다. </p>
             <p>웹 화면을 기준으로 제작을 하다보니 높이의 값을 px로 주는 것이 좋을지, vh로 주는 것이 좋을지 <span>고민을 많이 했습니다. 결론적으로는 px값으로 처리하였고, 나름대로 만족할만한 결과가 되었다고 생각합니다.</span> </p>
-            <p>aos 스크립트를 적용할 때 New&Notice 부분이 나타나기 전에 오른쪽으로 스크롤이 생기는 문제가 있었습니다.<span>이는 section의 부모요소인 main에 width 값 100%를 부여하고, overflow 를 hidden으로 처리하여 온전하게 만들었습니다. </span></p>
+            <p>aos 스크립트를 적용할 때 New&Notice 부분이 나타나기 전에 <strong>오른쪽으로 스크롤이 생기는 문제</strong>가 있었습니다.<span>이는 section의 <strong>부모요소인 main에 width 값 100%를 부여하고, overflow 를 hidden으로 처리</strong>하여 온전하게 만들었습니다. </span></p>
             <p>모쪼록 해당 프로젝트가 보는 이로 편리함을 느끼게 하고, 디자인적으로 아름답게 보이기를 바랍니다.</p>
         </div>
         <div class="site_motto">
-            <p>HLB - Always Challenge to the Innovation</p>
+            <p class="typing"></p>
             <p><a href="../work1/work_HLB.html">view work</a></p>
         </div>
         <div class="toTop">위로</div>
@@ -177,6 +184,11 @@
         });
         
          AOS.init();
+        const typer = new Typewriter('.typing',{/*(해당되는 객체,{option. strings:['작성하고자 하는 값']})*/
+            strings:[`HLB - Always Challenge to the Innovation`],
+            autoStart: true,
+            loop:true
+        });
     </script>
 </body>
 </html>
