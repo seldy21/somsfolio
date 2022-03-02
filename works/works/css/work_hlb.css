@@ -23,7 +23,7 @@ main h2{font-size: 25px; font-family: 'fugazOne',sans-serif; padding:3vw; displa
 main .gnb{position: absolute; right: 0; top:0; z-index: 10;}
 main .gnb ul{display: flex; margin:1vw}
 main .gnb ul li{margin:1vw; font-size: 14px; font-weight: 600;}
-main .gnb ul li .thisPage{display: none;}
+main .gnb ul li:nth-child(1){display: none;}
 main .gnb ul li .work_title{font-size: 12px; font-weight: 400;}
 .main_videoWrapper{display: flex; justify-content: center; background-color: #939FCD; width: 95%; margin:0 auto; height: 40vw; position: relative;}
 video{width: 70%; position: absolute; bottom:0;}
@@ -49,9 +49,10 @@ main .design .font_EN{display: flex;}
 main .design .font_EN ul li{font-family: 'DMSerif_Regular',serif;}
 main .design .font_KR ul li:nth-child(2){font-weight: 500;}
 main .design .font_KR ul li:nth-child(3){font-weight: 600;}
-main .design .design_txt{font-size: 14px; list-style: disc;}
+main .design .design_txt{font-size: 14px; list-style: disc; margin-left: 20px;}
 main .design .design_txt li{margin-bottom: 2.5vw; word-break: keep-all;}
 main .pageImg{position: relative; height: 55vw;}
+::marker{padding-left: 100px;}
 main .pageImg .imgbox{width: 40vw; height: 40vw; text-indent: -9999px;position: absolute; box-shadow: 1px 1px 30px #b5b6b9;}
 main .pageImg .box1{ background: url(../../works/images/fullPage_HLB.png) no-repeat 100% 100% / cover;left: 40%; top:15vw;}
 main .pageImg .box2{ background: url(../../works/images/fullPage_HLB.png) no-repeat 0% 0% / cover; height: 45vw;  left: 20%; top:0;}
@@ -59,7 +60,7 @@ main .pageImg .box2{ background: url(../../works/images/fullPage_HLB.png) no-rep
 main .publishing{width: 90%; margin:10vw auto;}
 main .publishing .keyword{margin-bottom:5vw;}
 main .publishing .keyword p{font-weight: 600;}
-main .publishing .publ_txt {list-style: disc;}
+main .publishing .publ_txt {list-style: disc; margin-left: 20px;}
 main .publishing .publ_txt li{font-size: 14px; margin-bottom: 2.5vw; word-break: keep-all;}
 
 main .comment{width: 90%; margin:10vw auto;}
@@ -97,8 +98,10 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
     main h2{font-size: 30px; padding:3vw 4vw;}
     main .gnb{left: 15vw;}
     
-    main .gnb ul li .thisPage{display: block; color: #939FCD;}
-    main .gnb ul li{margin:1vw; font-size: 18px;}
+    
+    main .gnb ul li:nth-child(1){display: block;}
+    main .gnb ul li .thisPage{color: #939FCD;}
+    main .gnb ul li{margin:2vw; font-size: 18px;}
     main .gnb ul li a{transition: .3s;}
     main .gnb ul li a:hover{color:#F38BA0;}
     main .gnb ul li .work_title{font-size: 14px;}
@@ -117,7 +120,7 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
     main .design{width: 70%;}
     .keyword p{font-size: 25px;}
     main .design .design_wrapper{display: flex;}
-    main .design .keyword{margin-right: 15vw;}
+    main .design .keyword{width: 80%;}
     main .design .color{justify-content: flex-start;}
     main .design .color li{width: 100px; height: 100px; margin: 0 1vw; line-height: 100px}
     main .design .font_KR p,main .design .font_EN p{font-size: 25px; line-height: 50px; margin-right: 1vw;}
