@@ -3,7 +3,7 @@
 a{text-decoration: none; display: block; color: inherit;}
 ul,h2,h3{list-style: none; padding:0; margin:0;}
 p{margin:0;}
-body{font-family: 'Noto Sans KR',돋움,sans-serif; position: relative; z-index: -9999;  line-height: 1.5;}
+body{font-family: 'Noto Sans KR',돋움,sans-serif; position: relative; z-index: -9999;  line-height: 1.5; }
 header h1{background-color: #EDF6E5; width: 75%; height:10vh;margin:0; display: flex; align-items: center; position: fixed; top:0;z-index: 10;}
 header h1 img{width: 70px; margin-left: 5vw;}
 aside h2{background-color: #F38BA0; height: 10vh; margin: 0 0 0 85%; display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'NanumSquare_ac',sans-serif; font-size: 1.5rem;position: fixed; width: 25%; z-index: 10; top:0;right: 0;}
@@ -18,7 +18,7 @@ aside ul img{width: 140px;}
 aside ul li:nth-child(2){background-color: #F38BA0; height: 30vh;top:40vh;transition: .6s .1s;}
 aside ul li:nth-child(3){background-color: #939FCD; height: 30vh; top:70vh;transition: .6s .3s;}
 
-main {margin-top:10vh; position:relative; z-index: -99;}
+main {margin-top:10vh; position:relative; z-index: -99;width: 100%; overflow: hidden;}
 main h2{font-size: 25px; font-family: 'fugazOne',sans-serif; padding:3vw; display: inline-block;}
 main .gnb{position: absolute; right: 0; top:0; z-index: 10;}
 main .gnb ul{display: flex; margin:1vw}
@@ -52,7 +52,6 @@ main .design .font_KR ul li:nth-child(3){font-weight: 600;}
 main .design .design_txt{font-size: 14px; list-style: disc; margin-left: 20px;}
 main .design .design_txt li{margin-bottom: 2.5vw; word-break: keep-all;}
 main .pageImg{position: relative; height: 55vw;}
-::marker{padding-left: 100px;}
 main .pageImg .imgbox{width: 40vw; height: 40vw; text-indent: -9999px;position: absolute; box-shadow: 1px 1px 30px #b5b6b9;}
 main .pageImg .box1{ background: url(../../works/images/fullPage_HLB.png) no-repeat 100% 100% / cover;left: 40%; top:15vw;}
 main .pageImg .box2{ background: url(../../works/images/fullPage_HLB.png) no-repeat 0% 0% / cover; height: 45vw;  left: 20%; top:0;}

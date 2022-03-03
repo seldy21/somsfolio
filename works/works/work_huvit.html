@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta property="og:title" content="정다솜의 포트폴리오">
@@ -36,6 +37,7 @@
         </div>
     </aside>
 
+    
     <main>
         <h2>works</h2>
         <div class="gnb">
@@ -66,7 +68,7 @@
             <div class="project_wrapper">
                 <div class="project_goalExpl">
                     <p>휴빛조명은 인테리어 조명에서 산업조명까지 LED 조명에 관한 모든 것을 판매하는 쇼핑몰입니다.</p>
-                    <p>화면은 모바일과 웹에 반응형으로 제작되었으며, </p>
+                    <p>화면은 모바일과 웹에 반응형으로 제작되었으며 쇼핑몰은 '상품 판매'의 목적이 있는 만큼, 상품의 이미지를 적절한 비율과 크기로 배치하려고 했습니다.</p>
                 </div>
                 <ul class="project_goalShort">
                     <li>
@@ -90,7 +92,7 @@
             <div class="design_wrapper">
                 <div class="keyword">
                     <p>#CONTRAST</p>
-                    <p>#</p>
+                    <p>#CONSISTENT</p>
                     <p>#</p>
                 </div>
                 <div class="design_expln">
@@ -109,10 +111,9 @@
                         </div>
                     </div>
                     <ul class="design_txt">
-                        <li>제약회사의 안정적이고 전문적인 느낌을 메인 화면에 제시.</li>
-                        <li>회사의 로고 색상(주황색)으로 마우스 오버 색상 지정</li>
-                        <li>주황색의 다소 가벼운 느낌에 남색으로 균형을 맞춤</li>
-                        <li>배경 이미지가 있는 섹션에서 배경 이미지를 크게 방해하지 않으면서 하얀색 글자의 가독성을 높이기 위해 남색에 불투명도를 부여하여 텍스트 부분의 배경색 적용.</li>
+                        <li>쇼핑몰이 가진 로고의 색상으로 포인트 컬러 지정.</li>
+                        <li>조명이 가진 밝은 느낌을 극대화하기 위해 대비되는 검정색을 사용하여 상단 메뉴 배경색으로 사용</li>
+                        <li>각 섹션의 상품 배치를 일관적으로 설정</li>
                         <li>전체 메뉴를 보는 항목은 불필요하므로 삭제.</li>
                         <li>각 섹션의 움직임은 부드러움을 강조하기 위해 여유있게 1초로 설정.</li>
                         <li>News&Notice 부분의 슬라이드는 화살표를 누르면 무한으로 반복. 다음 컨텐츠가 있음을 사용자게에 쉽게 안내하기 위하여 한 번에 3.5개의 슬라이드가 보이게 제작.</li>
@@ -133,18 +134,16 @@
                 <p>#swiper.js</p>
             </div>
             <ul class="publ_txt">
+                <li>a의 성격을 block으로 변경하여 작업 중 빈 공간에도 클릭의 영역이 나타나는 것을 확인하여 inline-block으로 수정</li>
+                <li>상품 슬라이드는 swiper.js 파일로 제어</li>
+                <li>맨 위로 스크롤 올라가게 하는 화살표는 첫 화면에서는 숨겨있다가 스크롤을 내리면 오른쪽에서 나타나게 함</li>
                 <li></li>
-                <li>각 섹션에 해당하는 부분은 창 양 끝에 숨겨있다가 해당 스크롤에 도달하면 자연스럽게 등장. aos.js 파일 사용.
-                </li>
-                <li>섹션 제목 왼쪽에 붙는 긴 선은 css의 padding 값과 border 값으로 제어.</li>
-                <li>대부분의 정렬에 flex 사용.</li>
-                <li>웹 브라우저에 맞춰 제작하였으므로 body에는 min-width값으로 1200px 적용.</li>
             </div>
         </div>
         <div class="comment">
             <p>포트폴리오 작업 중 그나마 가장 무난하게 작업했던 프로젝트입니다. 반응형으로 제작하면서 상품 배치에 많은 고민을 했습니다.</p>
-            <p>처음에는 화면이 작아지면 상품 슬라이드를 세로로 세우고, 화면이 넓어지면 슬라이드를 가로로 배치할 수 있도록 계획했었는데 모바일로 화면을 보는 경우 슬라이드의 움직임과 스크롤이 구분되기 어려울 것 같아서 슬라이드 방향은 가로로 그대로 두고 breakpoints로 슬라이드의 수를 조절했습니다.</p>
-            <p></p>
+            <p>처음에는 화면이 작아지면 상품 슬라이드를 세로로 세우고, 화면이 넓어지면 슬라이드를 가로로 배치할 수 있도록 계획했었는데 모바일로 화면을 보는 경우 슬라이드의 움직임과 스크롤이 구분되기 어려울 것 같아서 <strong>슬라이드 방향은 가로로 그대로 두고 breakpoints로 슬라이드의 수를 조절</strong>했습니다.</p>
+            <p>다만 아쉬운 점은 web에서 보이는 category의 각 섹션 높이값이 텍스트가 많은 섹션을 기준으로 일괄적으로 설정되어 다소 높게 느껴진다는 것입니다.</p>
             <p>모쪼록 해당 프로젝트가 보는 이로 편리함을 느끼게 하고, 디자인적으로 아름답게 보이기를 바랍니다.</p>
         </div>
         <div class="site_motto">
