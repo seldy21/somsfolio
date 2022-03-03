@@ -39,14 +39,14 @@ main .design{width: 90%; margin: 7vw auto;}
 .keyword p{font-size: 16px; font-weight: 600;}
 main .design .color{display: flex; justify-content: center;}
 main .design .color li{width: 80px; height: 80px; margin: 3vw 1vw; line-height: 80px; text-align: center;}
-main .design .color li:nth-child(1){color:#fff; background-color: #FF8400;}
-main .design .color li:nth-child(2){color:#fff; background-color: #545A6A;}
-main .design .color li:nth-child(3){color:#fff; background-color: #011859;}
+main .design .color li:nth-child(1){color:#fff; background-color: #ff0000;}
+main .design .color li:nth-child(2){color:#fff; background-color: #000000;}
 main .font{ margin: 2vw 0 5vw;}
 main .font p{margin-right: 1vw;}
 main .design .font_KR{display: flex;}
 main .design .font_EN{display: flex;}
-main .design .font_EN ul li{font-family: 'DMSerif_Regular',serif;}
+main .design .font_EN ul li:nth-child(1){font-family: 'tagus',sans-serif;}
+main .design .font_EN ul li:nth-child(2){font-family: 'imbue',serif;}
 main .design .font_KR ul li:nth-child(2){font-weight: 500;}
 main .design .font_KR ul li:nth-child(3){font-weight: 600;}
 main .design .design_txt{font-size: 14px; list-style: disc; margin-left: 20px;}
@@ -132,7 +132,7 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
     main .pageImg .box1{left:48%; top:10vw;}
     main .pageImg .box2{left:28%; height: 30vw;}
     
-    main .publishing{width: 70%;}
+    main .publishing{width: 70%; margin:3vw auto;}
     main .publishing .keyword{display: flex;}
     main .publishing .keyword p{margin-right:2vw; font-size: 25px;}
     main .publishing .publ_txt li{font-size: 18px; margin-bottom: 1vw;}

@@ -81,13 +81,6 @@
     font-display: swap;
 }
 @font-face {
-    font-family: 'imbue';
-    src: url(../fonts/Imbue-VariableFont_opsz,wght.woff2) format('woff2'), url(../fonts/Imbue-VariableFont_opsz,wght.woff) format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
     font-family: 'Tagus';
     src: url(../fonts/TagusXcond-Medium.woff2) format('woff2'), url(../fonts/TagusXcond-Medium.woff) format('woff');
     font-weight: 400;

@@ -132,7 +132,7 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
     main .pageImg .box1{left:48%; top:10vw;}
     main .pageImg .box2{left:28%; height: 30vw;}
     
-    main .publishing{width: 70%;}
+    main .publishing{width: 70%; margin:3vw auto;}
     main .publishing .keyword{display: flex;}
     main .publishing .keyword p{margin-right:2vw; font-size: 25px;}
     main .publishing .publ_txt li{font-size: 18px; margin-bottom: 1vw;}

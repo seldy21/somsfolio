@@ -4,7 +4,7 @@ a{text-decoration: none; display: block; color: inherit;}
 ul,h2,h3{list-style: none; padding:0; margin:0;}
 p{margin:0;}
 body{font-family: 'Noto Sans KR',돋움,sans-serif; position: relative; z-index: -9999;  line-height: 1.5;}
-header h1{background-color: #EDF6E5; width: 75%; height:10vh;margin:0; display: flex; align-items: center; position: fixed; top:0;z-index: 10;}
+header h1{background-color: #EDF6E5; width: 75%; height:10vh;margin:0;position: fixed; top:0;z-index: 10;}
 header h1 img{width: 70px; margin-left: 5vw;}
 aside h2{background-color: #F38BA0; height: 10vh; margin: 0 0 0 85%; display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'NanumSquare_ac',sans-serif; font-size: 1.5rem;position: fixed; width: 25%; z-index: 10; top:0;right: 0;}
 aside ul{
@@ -78,7 +78,8 @@ main .comment p{margin-bottom: 3vw; word-break: keep-all;}
 
 main .site_motto{margin-bottom:10vw; display: flex; justify-content: center; align-items: center; flex-direction: column;}
 main .site_motto p{font-size: 20px; font-weight: 600; text-align: center;}
-main .site_motto p:nth-child(2){font-size: 25px; border:1px solid #FFBCBC; width: 50%; margin: 2vw auto 0; border-radius: 10px;}
+main .site_motto .viewPro p{font-size: 18px; border:1px solid #FFBCBC; margin: 2vw auto 0; border-radius: 10px;}
+main .site_motto .viewPro p a{padding:10px}
 
 
 .toTop{background: url(../../works/images/arrow_back_black_24dp.svg) no-repeat 100% / cover; width: 40px; height: 40px; transform: rotate(90deg); text-indent: -9999px; position: fixed; bottom:4vw; right:-50px; transition: .5s;}
@@ -169,8 +170,9 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
 
     
     main .site_motto p{font-size: 48px;}
-    main .site_motto p:nth-child(2){font-size: 55px; border:none; width: auto;}
-    main .site_motto p a{display: inline-block; transition: .5s; position: relative; color: #939FCD;}
+    main .site_motto .viewPro{display: flex;}
+    main .site_motto .viewPro p{font-size: 55px; border:none; width: auto;}
+    main .site_motto p a{display: inline-block; transition: .5s; position: relative; color: #939FCD; margin: 2vw;}
     main .site_motto p a:hover{color:#fff}
     main .site_motto p a::before{
         transform: scaleX(0);
