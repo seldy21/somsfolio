@@ -15,12 +15,14 @@
         <h1><a href="../index.html"><img src="../common/images/mainLogo.svg" alt="메인로고"></a></h1>
     </header>
     <aside>
-        <h2>menu</h2>
-        <ul>
-            <li><img src="../common/images/flowerLogo2.svg" alt="꽃그림"></li>
-            <li><a href="../works/works.html">works</a></li>
-            <li><a href="../about/aboutNskill.html">about & skill</a></li>
-        </ul>
+        <h2 class="menu_btn">menu</h2>
+        <div class="slide_wrapper">
+            <ul class="slide_menu">
+                <li><img src="../../common/images/flowerLogo2.svg" alt="꽃그림"></li>
+                <li><a href="../works/works/work_hlb.html">works</a></li>
+                <li><a href="#">about&skill</a></li>
+            </ul>
+        </div>
     </aside>
     <main>
         <section class="pic">
@@ -41,6 +43,14 @@
             <h2><span>yes,</span> i am sure that i will be your good colleage!</h2>
         </section>
     </main>
-    
+    <script>
+        
+        const menu=document.querySelector('.menu_btn');
+        const slide=document.querySelector('.slide_wrapper')
+        menu.addEventListener('click',()=>{
+            slide.classList.toggle('active');
+        });
+
+    </script>
 </body>
 </html>

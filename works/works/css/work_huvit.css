@@ -119,7 +119,7 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
     main .design{width: 70%;}
     .keyword p{font-size: 25px;}
     main .design .design_wrapper{display: flex;}
-    main .design .keyword{width: 80%;}
+    main .design .keyword{width: 50%;}
     main .design .color{justify-content: flex-start;}
     main .design .color li{width: 100px; height: 100px; margin: 0 1vw; line-height: 100px}
     main .design .font_KR p,main .design .font_EN p{font-size: 25px; line-height: 50px; margin-right: 1vw;}
