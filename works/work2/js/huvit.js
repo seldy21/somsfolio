@@ -68,3 +68,23 @@ var swiper = new Swiper(".mySwiper", {
     }
   }
 });
+
+/* Ajax */
+
+
+$.ajax({
+  url:"js/JSON.json",
+  dataType:"json",
+  success:function(data){
+      console.log(data);
+      if(data.length>0){
+          for(let el in data) {
+              let desc=data[el].description;
+              let url=data[el].url;
+              let pr=data[el].price;
+              let sort=data[el].sort;
+              $('.box2 li').eq(el).append(`<a href="#"><img src=${url}></a><p class="expln">${sort}</p><a href="#"><p class="name">${desc}</p></a><p class="price">${pr}</p>`);
+          }
+      }
+  }
+});

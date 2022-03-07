@@ -79,20 +79,27 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
 
 
 @media screen and (min-width:768px) {
-    header h1{width: 85%; height: 15vh;}
+    header.active h1{height: 7vh;}
+    header h1{width: 85%; height: 15vh; transition: .5s;}
     header h1 a:hover img{transform: scale(1.1);}
     header h1 img{width: 110px; margin-left: 2vw;transition: .5s;}
-    aside h2{ height: 15vh;font-size: 2.8rem; width: 15%;}
+    header.active h1 img{width: 60px;}
+    aside h2{ height: 15vh;font-size: 2.8rem; width: 15%; transition: .5s;}
+    aside.active h2{ height: 7vh; font-size: 24px;}
     aside .slide_wrapper{width: 100%; height: 100vh;position: fixed; top:15vh; right: -100%; transition: 1.5s;background-color: rgba(0,0,0,0.6);}
+    aside.active .slide_wrapper{top:7vh;}
     aside ul li:nth-child(1){height: 28.33vh;transition: .6s; top:15vh;}
     aside ul img{width: 140px;}
     aside ul li:nth-child(2){height: 28.33vh;top:43.33vh;transition: .6s .1s;}
     aside ul li:nth-child(3){height: 28.33vh; top:71.66vh;transition: .6s .3s;}
+    aside.active ul li:nth-child(1){height: 31vh;top:7vh;}
+    aside.active ul li:nth-child(2){height: 31vh; top:38vh;}
+    aside.active ul li:nth-child(3){height: 31vh; top:69vh;}
     aside h2:hover{cursor: pointer;}
     aside ul a {transition: .5s;}
     aside ul a:hover {color:#2A285E;}
     aside ul li{ width:60vw; font-size: 7rem;  right:-60vw;}
-
+    
     main{margin-top:15vh;}
     main h2{font-size: 30px; padding:3vw 4vw;}
     main .gnb{left: 15vw;}

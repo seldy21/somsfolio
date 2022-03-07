@@ -25,6 +25,7 @@
 
     <script src="../../common/js/aos.js"></script>
     <script src="../../common/js/core.js"></script>
+    <script defer src="js/works.js"></script>
 </head>
 <body>
     <header>
@@ -35,7 +36,7 @@
         <div class="slide_wrapper">
             <ul class="slide_menu">
                 <li><img src="../../common/images/flowerLogo2.svg" alt="꽃그림"></li>
-                <li><a href="work_gaguDoctor.html">next work</a></li>
+                <li><a href="work_huvit.html">next work</a></li>
                 <li><a href="../../about/aboutNskill.html">about&skill</a></li>
             </ul>
         </div>
@@ -46,16 +47,16 @@
         <div class="gnb">
             <ul>
                 <li>
-                    <div class="work_title">view more</div>
-                    <a href="work_hlb.html">HLB</a>
+                    <div class="work_title thisPage">You are here</div>
+                    <p>ELLE</p>
                 </li>
                 <li>
                     <div class="work_title">view more</div>
                     <a href="work_huvit.html">HUVIT LED</a>
                 </li>
                 <li>
-                    <div class="work_title thisPage">You are here</div>
-                    <p>ELLE</p>
+                    <div class="work_title">view more</div>
+                    <a href="work_hlb.html">HLB</a>
                 </li>
                 <li>
                     <div class="work_title">view more</div>
@@ -167,27 +168,6 @@
     </footer>
     
     <script>
-        const menu=document.querySelector('.menu_btn');
-        const slide=document.querySelector('.slide_wrapper')
-        menu.addEventListener('click',()=>{
-            slide.classList.toggle('active');
-        });
-
-        const toTop=document.querySelector('.toTop')
-
-        addEventListener('scroll',()=>{
-        if(window.pageYOffset>90){
-            toTop.classList.add('show');
-        }else{
-            toTop.classList.remove('show');
-        }
-        });
-        toTop.addEventListener('click',(e)=>{
-            e.preventDefault();
-            scrollTo({top:0,behavior:'smooth'});
-        });
-        
-         AOS.init();
         const typer = new Typewriter('.typing',{
             strings:[`No.1 Fashion Media - ELLE KOREA`],
             autoStart: true,

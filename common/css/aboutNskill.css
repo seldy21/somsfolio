@@ -39,5 +39,5 @@ main .skill img{width: 100px; position: absolute; right: 1vw;position:-99 ;}
     aside ul li{ width:60vw; font-size: 7rem;  right:-60vw;}
     main {display: flex;}
     main .introduce{margin-top:15vh; position:fixed; z-index: -9; height: 100%; width: 30vw; word-break: keep-all;}
-    main .skill{position: absolute;background-color: aliceblue;width: 58vw; right: 0;top:15vh;z-index: -9;}
+    main .skill{position: absolute;background-color: aliceblue;width: 58vw; right: 0;top:15vh;z-index: -9;height: 65vh;}
 }

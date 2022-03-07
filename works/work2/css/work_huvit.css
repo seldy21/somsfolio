@@ -24,6 +24,8 @@ nav .menu .menu2{background-color: rgba(56, 56, 56, 0.95);width: 30vw; padding-t
 .toTop.show{right:5vw;}
 
 main .box{display:flex;align-items: flex-start;}
+main .box2{display:flex;align-items: flex-start;}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{bottom:0;}
 
 main .info {display: flex; flex-direction: column; margin:0 auto;}
 main .info h1{order:2; margin:26px auto 6px;}
@@ -35,7 +37,7 @@ main .info .moto{order:1; margin-left: auto;font-size: 0.8rem; padding-top:17px;
 main .info .moto p{font-weight: 600;}
 main .info .moto span{color: #F35D1E;} 
 
-main section{width: 80vw; margin: 60px auto;}
+main section{width: 90vw; margin: 60px auto;}
 main section.new{margin-top:0;}
 main section ul li{margin:20px 0;}
 main section h3{font-size: 1.325rem; margin-bottom:15px;}
@@ -86,7 +88,7 @@ footer .more{display: flex; justify-content: space-around; padding: 20px 0 10px;
 
     main section{width: 80vw; margin: 100px auto;}
 
-    .swiper-button-next,.swiper-button-prev,.swiper-pagination{display: block;}
+    main .box2 img:hover{opacity: 0.7;transition: .3s;}
 
     main .expln{font-size: 0.983rem; padding-bottom: 4px; margin-bottom:4px;}
     main section img{width: 25vw;padding-bottom:10px;}

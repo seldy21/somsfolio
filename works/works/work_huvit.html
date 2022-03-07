@@ -25,6 +25,7 @@
 
     <script src="../../common/js/aos.js"></script>
     <script src="../../common/js/core.js"></script>
+    <script defer src="js/works.js"></script>
 </head>
 <body>
     <header>
@@ -35,7 +36,7 @@
         <div class="slide_wrapper">
             <ul class="slide_menu">
                 <li><img src="../../common/images/flowerLogo2.svg" alt="꽃그림"></li>
-                <li><a href="work_elle.html">next work</a></li>
+                <li><a href="work_hlb.html">next work</a></li>
                 <li><a href="../../about/aboutNskill.html">about&skill</a></li>
             </ul>
         </div>
@@ -48,7 +49,7 @@
             <ul>
                 <li>
                     <div class="work_title">view more</div>
-                    <a href="work_hlb.html">HLB</a>
+                    <a href="work_elle.html">ELLE</a>
                 </li>
                 <li>
                     <div class="work_title thisPage">You are here</div>
@@ -56,7 +57,7 @@
                 </li>
                 <li>
                     <div class="work_title">view more</div>
-                    <a href="work_elle.html">ELLE</a>
+                    <a href="work_hlb.html">HLB</a>
                 </li>
                 <li>
                     <div class="work_title">view more</div>
@@ -133,12 +134,15 @@
                 <p>#시멘틱마크업</p>
                 <p>#Javascript</p>
                 <p>#swiper.js</p>
+                <p>#jQuery</p>
+                <p>#Ajax</p>
                 <p>#mobile_first</p>
             </div>
             <ul class="publ_txt">
                 <li>a의 성격을 block으로 변경하여 작업 중 빈 공간에도 클릭의 영역이 나타나는 것을 확인하여 inline-block으로 수정</li>
                 <li>상품 슬라이드는 swiper.js 파일로 제어. loop 값을 주어 무한으로 반복.</li>
                 <li>맨 위로 스크롤 올라가게 하는 화살표는 첫 화면에서는 숨겨있다가 스크롤을 내리면 오른쪽에서 나타나게 함</li>
+                <li>swiper와 Ajax가 동시에 적용되지 않아서 swiper 효과가 들어가지 않은 '인기상품' 부분의 상품 배열에 Ajax와 JSON 파일을 사용.</li>
             </div>
         </div>
         <div class="comment">
@@ -158,26 +162,6 @@
     </footer>
     
     <script>
-        const menu=document.querySelector('.menu_btn');
-        const slide=document.querySelector('.slide_wrapper')
-        menu.addEventListener('click',()=>{
-            slide.classList.toggle('active');
-        });
-
-        const toTop=document.querySelector('.toTop')
-
-        addEventListener('scroll',()=>{
-        if(window.pageYOffset>90){
-            toTop.classList.add('show');
-        }else{
-            toTop.classList.remove('show');
-        }
-        });
-        toTop.addEventListener('click',(e)=>{
-            e.preventDefault();
-            scrollTo({top:0,behavior:'smooth'});
-        });
-        
          AOS.init();
         const typer = new Typewriter('.typing',{
             strings:[`가치있는 빛을 만드는 공작소`],

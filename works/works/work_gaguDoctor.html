@@ -24,6 +24,7 @@
 
     <script src="../../common/js/aos.js"></script>
     <script src="../../common/js/core.js"></script>
+    <script defer src="js/works.js"></script>
 </head>
 <body>
     <header>
@@ -34,7 +35,7 @@
         <div class="slide_wrapper">
             <ul class="slide_menu">
                 <li><img src="../../common/images/flowerLogo2.svg" alt="꽃그림"></li>
-                <li><a href="work_hlb.html">next work</a></li>
+                <li><a href="work_elle.html">next work</a></li>
                 <li><a href="../../about/aboutNskill.html">about&skill</a></li>
             </ul>
         </div>
@@ -46,7 +47,7 @@
             <ul>
                 <li>
                     <div class="work_title">view more</div>
-                    <a href="work_hlb.html">HLB</a>
+                    <a href="work_elle.html">ELLE</a>
                 </li>
                 <li>
                     <div class="work_title">view more</div>
@@ -54,7 +55,7 @@
                 </li>
                 <li>
                     <div class="work_title">view more</div>
-                    <a href="work_elle.html">ELLE</a>
+                    <a href="work_hlb.html">HLB</a>
                 </li>
                 <li>
                     <div class="work_title thisPage">You are here</div>
@@ -63,7 +64,7 @@
             </ul>
         </div>
         <div class="main_videoWrapper">
-            <video src="video/gagu_intro.mp4" type="video/mp4" muted autoplay loop></video>
+            <img src="images/gagu_pages.png" alt="">
         </div>
         <div class="project_goal">
             <h3>ABOUT PROJECT</h3>
@@ -254,27 +255,6 @@
         som's portfolio
     </footer>
     <script>
-        const menu=document.querySelector('.menu_btn');
-        const slide=document.querySelector('.slide_wrapper')
-        menu.addEventListener('click',()=>{
-            slide.classList.toggle('active');
-        });
-
-        const toTop=document.querySelector('.toTop')
-
-        addEventListener('scroll',()=>{
-        if(window.pageYOffset>90){
-            toTop.classList.add('show');
-        }else{
-            toTop.classList.remove('show');
-        }
-        });
-        toTop.addEventListener('click',(e)=>{
-            e.preventDefault();
-            scrollTo({top:0,behavior:'smooth'});
-        });
-        
-         AOS.init();
         const typer = new Typewriter('.typing',{
             strings:[`내 가구의 재발견 - 가구수리닥터`],
             autoStart: true,

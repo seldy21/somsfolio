@@ -1,0 +1,20 @@
+[
+    {
+        "description":"LED 펜던트 우드 30W 카페 매장 조명",
+        "url":"images/section2-1.jpg",
+        "sort":"포인트조명",
+        "price":"￦ 200,000"
+    },
+    {
+        "description":"LED 방등 50W 뉴템 주광색",
+        "url":"images/section2-2.jpg",
+        "sort":"방등",
+        "price":"￦ 29,800"
+    },
+    {
+        "description":"LED등 거실 평판조명 베젤리스 플리커프리",
+        "url":"images/section2-3.jpg",
+        "sort":"거실등",
+        "price":"￦ 95,000"
+    }
+]
