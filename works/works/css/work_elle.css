@@ -52,10 +52,10 @@ main .design .font_KR ul li:nth-child(2){font-weight: 500;}
 main .design .font_KR ul li:nth-child(3){font-weight: 600;}
 main .design .design_txt{font-size: 14px; list-style: disc; margin-left: 20px;}
 main .design .design_txt li{margin-bottom: 2.5vw; word-break: keep-all;}
-main .pageImg{position: relative; height: 55vw;}
-main .pageImg .imgbox{width: 40vw; height: 40vw; text-indent: -9999px;position: absolute; box-shadow: 1px 1px 30px #16161667;}
-main .pageImg .box1{ background: url(../../works/images/elle.png) no-repeat 100% 100% / cover;left: 40%; top:15vw;}
-main .pageImg .box2{ background: url(../../works/images/elle.png) no-repeat 0% 0% / cover; height: 45vw;  left: 20%; top:0;}
+main .pageImg{position: relative; height: 100vw;}
+main .pageImg .imgbox{width: 40vw; height: 90vw; text-indent: -9999px;position: absolute; box-shadow: 1px 1px 30px #16161667;}
+main .pageImg .box1{ background: url(../../works/images/elleMobile1.png) no-repeat 100% 100% / cover;left: 40%; top:15vw;}
+main .pageImg .box2{ background: url(../../works/images/elleMobile.png) no-repeat 0% 0% / cover; left: 20%; top:0;}
 
 main .publishing{width: 90%; margin:10vw auto;}
 main .publishing .keyword{margin-bottom:5vw;}
@@ -135,10 +135,10 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
     main .design .design_txt{font-size: 18px;}
     main .design .design_txt li{margin-bottom: 1vw}
 
-    main .pageImg { height: 40vw;}
-    main .pageImg .imgbox{width: 26vw; height: 25vw; }
+    main .pageImg { height: 50vw;}
+    main .pageImg .imgbox{width: 20vw; height: 42vw; }
     main .pageImg .box1{left:48%; top:10vw;}
-    main .pageImg .box2{left:28%; height: 30vw;}
+    main .pageImg .box2{left:28%;}
     
     main .publishing{width: 70%; margin:3vw auto;}
     main .publishing .keyword{display: flex; flex-wrap: wrap;}

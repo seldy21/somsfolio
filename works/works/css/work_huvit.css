@@ -53,8 +53,8 @@ main .design .design_txt li{margin-bottom: 2.5vw; word-break: keep-all;}
 main .pageImg{position: relative; height: 55vw;}
 ::marker{padding-left: 100px;}
 main .pageImg .imgbox{text-indent: -9999px;position: absolute; box-shadow: 1px 1px 30px #16161667;}
-main .pageImg .box1{ background: url(../../works/images/huvitMobile.jpg) no-repeat 0% 0% / cover;left: 60%; top:15vw; width:20vw;height: 35vw; }
-main .pageImg .box2{ background: url(../../works/images/huvitWeb.png) no-repeat 0% 0% / cover; height: 45vw;  left: 20%; top:0; width: 40vw; z-index: -9;}
+main .pageImg .box1{ background: url(../../works/images/huvitMobile.png) no-repeat 0%  / contain;left: 60%; top:15vw; width:16vw;height: 35vw; }
+main .pageImg .box2{ background: url(../../works/images/huvitWeb.png) no-repeat 0% 0%/ cover; height: 45vw;  left: 20%; top:0; width: 40vw; z-index: -9;}
 
 main .publishing{width: 90%; margin:10vw auto;}
 main .publishing .keyword{margin-bottom:5vw;}
@@ -136,7 +136,7 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
 
     main .pageImg { height: 40vw;}
     main .pageImg .imgbox{width: 26vw; height: 25vw; }
-    main .pageImg .box1{left:50%; top:10vw; width: 20vw; height: 37vw; 
+    main .pageImg .box1{left:50%; top:10vw; width: 17vw; height: 37vw; 
     }
     main .pageImg .box2{left:26%; height: 30vw;}
     
