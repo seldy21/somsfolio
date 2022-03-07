@@ -52,7 +52,7 @@ main .design .font_KR ul li:nth-child(3){font-weight: 600;}
 main .design .design_txt{font-size: 14px; list-style: disc; margin-left: 20px;}
 main .design .design_txt li{margin-bottom: 2.5vw; word-break: keep-all;}
 main .pageImg{position: relative; height: 55vw;}
-main .pageImg .imgbox{width: 40vw; height: 40vw; text-indent: -9999px;position: absolute; box-shadow: 1px 1px 30px #b5b6b9;}
+main .pageImg .imgbox{width: 40vw; height: 40vw; text-indent: -9999px;position: absolute; box-shadow: 1px 1px 30px #16161667;}
 main .pageImg .box1{ background: url(../../works/images/elle.png) no-repeat 100% 100% / cover;left: 40%; top:15vw;}
 main .pageImg .box2{ background: url(../../works/images/elle.png) no-repeat 0% 0% / cover; height: 45vw;  left: 20%; top:0;}
 

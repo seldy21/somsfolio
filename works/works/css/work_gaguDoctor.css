@@ -25,27 +25,37 @@ main .gnb ul{display: flex; margin:1vw}
 main .gnb ul li{margin:1vw; font-size: 14px; font-weight: 600;}
 main .gnb ul li:nth-child(4){display: none;}
 main .gnb ul li .work_title{font-size: 12px; font-weight: 400;}
-.main_videoWrapper{display: flex; justify-content: center; background-color: #939FCD; width: 95%; margin:0 auto; height: 40vw; position: relative; overflow: hidden;}
+.main_videoWrapper{display: flex; justify-content: center; background-color: #FAEFCA; width: 95%; margin:0 auto; height: 40vw; position: relative; overflow: hidden;}
 video{width: 30%; position: absolute;border-radius: 20px;}
-.main_videoWrapper video:nth-child(1){top:20px; left: 15vw;}
-.main_videoWrapper video:nth-child(2){bottom:30px; right: 15vw;}
+.main_videoWrapper video{top:20px; left: 50%; transform: translateX(-50%);}
 main .project_goal{word-break: keep-all; margin: 3vw auto; width: 90%;}
 h3{font-size: 20px; font-weight: 600; margin:5vw 0;}
-main .project_goal .project_wrapper{display: flex; flex-direction: column;}
-main .project_goal .project_goalExpl p{font-size: 15px; margin:3vw;}
-main .project_goal .project_goalShort {font-size: 12px;display: flex; flex-wrap: wrap; justify-content: center; padding: 3vw 0;}
-main .project_goal .project_goalShort li{ width: 33%;}
-main .project_goal .project_goalShort .gray{color:#939FCD}
+main .project_goal .project_wrapper{display: flex; flex-direction: column;font-size: 15px;}
+main .project_goal .project_wrapper p{margin:3vw;}
+main .project_goal .project_wrapper .project_role{margin-bottom:0;}
+main .project_goal .project_wrapper ul{margin:0 3vw 3vw 3vw;}
 
-main .persona{width: 90%; margin: 0 auto;}
-main .persona .persona_wrapper{display: flex; flex-direction: column; align-items: center;}
-main .persona img{width: 60%;}
+main .research{width: 90%; margin:7vw auto;}
+main .research img{width: 100%;margin:1vw 0;}
+main .research_txt p{font-size:15px; margin:1vw 3vw;}
 
 main .vision{width: 90%; margin:7vw auto;}
 main .vision .keyword{display: flex;}
 main .vision .keyword p{margin-right:1vw;}
 main .vision h4{text-align: center; font-size: 20px;}
-main .vision h5{text-align: center; font-size: 18px; word-break: keep-all;}
+main .vision h5{text-align: center; font-size: 17x; word-break: keep-all; font-weight: normal;}
+
+
+main .persona{width: 90%; margin: 0 auto;}
+main .persona .persona_wrapper{display: flex; flex-direction: column; align-items: center;}
+main .persona img{width: 60%;}
+main .persona h4{margin-bottom:1vw;}
+main .persona h5{font-weight: normal; margin-top:0;}
+main .persona ul{font-size: 15px;}
+
+main .map_info{width: 90%; margin:7vw auto;}
+main .map_info img{display: none;}
+main .map_info .txt_box{height: 30vw; display: flex; align-items: center; justify-content: center;}
 
 main .design{width: 90%; margin: 7vw auto;}
 .keyword p{font-size: 16px; font-weight: 600;}
@@ -61,16 +71,15 @@ main .design .font ul li:nth-child(2){font-weight: 500;}
 main .design .font ul li:nth-child(3){font-weight: 600;}
 main .design .design_txt{font-size: 14px; list-style: disc; margin-left: 20px;}
 main .design .design_txt li{margin-bottom: 2.5vw; word-break: keep-all;}
-main .pageImg{position: relative; height: 100vw;}
-main .pageImg .imgbox{width: 40vw; height: 84vw; text-indent: -9999px;position: absolute; box-shadow: 1px 1px 30px #b5b6b9;  border-radius: 20px;}
-main .pageImg .box1{ background: url(../../works/images/gagu_pre.png) no-repeat 100% 100% / cover;left: 40%; top:15vw;}
-main .pageImg .box2{ background: url(../../works/images/gagu_home.png) no-repeat 0% 0% / cover; left: 20%; top:0;}
 
-main .publishing{width: 90%; margin:5vw auto;}
-main .publishing .keyword{margin-bottom:5vw;}
-main .publishing .keyword p{font-weight: 600;}
-main .publishing .publ_txt {list-style: disc; margin-left: 20px;}
-main .publishing .publ_txt li{font-size: 14px; margin-bottom: 2.5vw; word-break: keep-all;}
+main .proto_img{width: 90%;margin:7vw auto;}
+main .proto_img p{font-size: 15px;margin:2vw 0;}
+main .proto_img .proto_wrapper{display: flex; align-items: center; margin:3vw 0;}
+main .proto_img .proto_wrapper img{width: 42%;}
+main .proto_img .proto_wrapper:nth-of-type(1) p{ margin-left:4vw;}
+main .proto_img .proto_wrapper:nth-of-type(2){flex-wrap: wrap; justify-content: space-around;}
+main .proto_img .proto_wrapper:nth-of-type(3) p{margin-right:4vw;}
+main .proto_img .proto_wrapper:nth-of-type(4) p{margin-right:4vw;}
 
 main .comment{width: 90%; margin:10vw auto;}
 main .comment strong{background-color: #FFBCBC;}
@@ -90,7 +99,7 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
 
 
 @media screen and (min-width:768px) {
-    header h1{width: 85%; height: 15vh;}
+    header h1{width: 85%; height: 15vh; display: flex; align-items: center;}
     header h1 a:hover img{transform: scale(1.1);}
     header h1 img{width: 110px; margin-left: 2vw;transition: .5s;}
     aside h2{ height: 15vh;font-size: 2.8rem; width: 15%;}
@@ -116,21 +125,36 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
     main .gnb ul li a:hover{color:#F38BA0;}
     main .gnb ul li .work_title{font-size: 14px;}
 
-    .main_videoWrapper{height: 35vw; z-index: -9;}
+    .main_videoWrapper{height: 35vw; z-index: -9; display: flex;align-items: center; justify-content: center;}
     
-    .main_videoWrapper video:nth-child(1){top:10vw; left: 15vw;}
-    .main_videoWrapper video:nth-child(2){bottom:8vw; right: 15vw;}
+    .main_videoWrapper video{width:12vw; position:static; transform: translateX(0);}
+
     
-    main .project_goal{width: 70%;}
+    main .project_goal{width: 75%;}
     h3{font-size: 40px; margin-bottom:2vw;}
-    main .project_goal .project_wrapper{flex-direction: row;}
+    main .project_goal .project_wrapper{flex-direction: row; font-size: 18px; margin:2vw 0;}
     main .project_goal .project_goalExpl{width: 75%;}
     main .project_goal .project_goalExpl p{font-size: 18px; margin:0 4vw 2vw 0;}
-    main .project_goal .project_goalShort{justify-content: flex-start; padding:0;}
-    main .project_goal .project_goalShort .gray{font-size: 16px;}
-    main .project_goal .project_goalShort li{width: 50%; font-size: 20px;}
+    main .project_goal .project_wrapper .project_role{margin:0;}
 
-    main .persona{width: 70%;}
+    
+    main .research{width: 75%;}
+    main .research .research_img{width: 100%;display: flex; justify-content: space-between;}
+    main .research .research_img p{font-size: 14px;}
+    main .research_txt p{font-size:18px; margin:2vw 0;}
+    main .research_wrapper .research_img:nth-of-type(3){position:relative; height: 25vw;}
+    main .research_wrapper .research_img:nth-of-type(3) img{position:absolute; width: 50%}
+    main .research_wrapper .research_img3{left: 10vw;}
+    main .research_wrapper .research_img4{top:5vw; left: 30vw;}
+    main .research_wrapper .research_img5{top:11vw; left: 5vw;}
+    main .research_wrapper .research_img6{top:15vw; right: 2vw;}
+
+    main .vision{width: 75%;}
+    main .vision .keyword p{margin-right:2vw;}
+    main .vision h4{font-size: 60px; margin:3vw 0 2vw;}
+    main .vision h5{font-size: 30px;}
+
+    main .persona{width: 75%;}
     main .persona img{width: 30%;}
     main .persona .persona_wrapper{flex-direction: row;}
     main .persona .persona_expln{margin-left: 6vw;}
@@ -138,33 +162,32 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
     main .persona .persona_expln h5{font-size: 25px; }
     main .persona .persona_expln ul li{font-size: 20px; }
 
+    main .map_info{width: 75%;}
+    main .map_info img{display: block; width: 100%;}
+    main .map_info .txt_box{display: none;}
 
-    main .vision{width: 70%;}
-    main .vision .keyword p{margin-right:2vw;}
-    main .vision h4{font-size: 60px; margin:3vw 0 2vw;}
-    main .vision h5{font-size: 30px;}
-
-    main .design{width: 70%;}
+    main .design{width: 75%;}
     .keyword p{font-size: 25px;}
     main .design .design_wrapper{display: flex;}
     main .design .keyword{width: 80%;}
+    main .design .keyword ul li{margin-bottom:2vw;}
+    main .design .keyword ul p{font-weight: normal; font-size: 18px; margin:0;}
     main .design .color{justify-content: flex-start;}
     main .design .color li{width: 100px; height: 100px; margin: 0 1vw; line-height: 100px}
     main .design .font li{font-size: 30px; line-height: 50px; margin-right: 1vw;}
     main .design .design_txt{font-size: 18px;}
     main .design .design_txt li{margin-bottom: 1vw}
-
-    main .pageImg { height: 48vw;}
-    main .pageImg .imgbox{width: 17vw; height:36vw; border-radius: 25px;}
-    main .pageImg .box1{left:48%; top:10vw;}
-    main .pageImg .box2{left:28%;}
     
-    main .publishing{width: 70%; margin:auto;}
-    main .publishing img{width: 100%;}
-    main .publishing .publ_txt li{font-size: 18px; margin-bottom: 1vw;}
-
+    main .proto_img{width: 75%;}
+    main .proto_img p{font-size: 18px;}
+    main .proto_img .proto_wrapper{display: flex; align-items: center; margin:3vw 0;}
+    main .proto_img .proto_wrapper img{width: 14%;}
+    main .proto_img .proto_wrapper:nth-of-type(2){flex-wrap: nowrap;}
+    main .proto_img .proto_wrapper:nth-of-type(2) img{margin-left: 2vw;}
+    main .proto_img .proto_wrapper:nth-of-type(3) img{margin:0 5vw;}
+    main .proto_img .proto_wrapper:nth-of-type(4) img{margin:0 4vw;}
     
-    main .comment{width:70%;}
+    main .comment{width:75%;}
     main .comment p{font-size: 20px;}
     main .comment span{display: block;}
 

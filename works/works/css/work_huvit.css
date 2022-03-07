@@ -52,9 +52,9 @@ main .design .design_txt{font-size: 14px; list-style: disc; margin-left: 20px;}
 main .design .design_txt li{margin-bottom: 2.5vw; word-break: keep-all;}
 main .pageImg{position: relative; height: 55vw;}
 ::marker{padding-left: 100px;}
-main .pageImg .imgbox{text-indent: -9999px;position: absolute; box-shadow: 1px 1px 30px #b5b6b9;}
+main .pageImg .imgbox{text-indent: -9999px;position: absolute; box-shadow: 1px 1px 30px #16161667;}
 main .pageImg .box1{ background: url(../../works/images/huvitMobile.jpg) no-repeat 0% 0% / cover;left: 60%; top:15vw; width:20vw;height: 35vw; border-radius: 10px;}
-main .pageImg .box2{ background: url(../../works/images/huvitWeb.png) no-repeat 0% 0% / cover; height: 45vw;  left: 20%; top:0; width: 40vw;}
+main .pageImg .box2{ background: url(../../works/images/huvitWeb.png) no-repeat 0% 0% / cover; height: 45vw;  left: 20%; top:0; width: 40vw; z-index: -9;}
 
 main .publishing{width: 90%; margin:10vw auto;}
 main .publishing .keyword{margin-bottom:5vw;}
