@@ -17,8 +17,8 @@ nav .menu_on{height: 750px;}
 nav .menu h5{margin:0; padding:15px 0; text-align: center;}
 nav .menu .menu_contents a{font-size: 18px; font-weight: 400;}
 nav .menu .menu_contents li{display: none;}
-nav .menu .menu1{background-color: rgba(85, 85, 85, 0.95); width: 70vw; padding-top:10px;}
-nav .menu .menu2{background-color: rgba(56, 56, 56, 0.95);width: 30vw; padding-top:10px;}
+nav .menu .menu1{background-color: rgb(85, 85, 85); width: 70vw; padding-top:10px;}
+nav .menu .menu2{background-color: rgb(56, 56, 56);width: 30vw; padding-top:10px;}
 
 .toTop{position: fixed; right: -50px; bottom :5vw; background-color: rgb(194, 194, 194); color: #000; font-weight: 600; opacity: 0.7; border-radius: 30%; display: flex; justify-content: center; align-items: center; font-size: 12px; width: 30px; height: 30px; text-align: center; cursor: pointer; z-index: 10;transition: .5s;}
 .toTop.show{right:5vw;}
