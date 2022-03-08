@@ -38,5 +38,15 @@
             e.preventDefault();
             scrollTo({top:0,behavior:'smooth'});
         });
+
+        const arrow=document.querySelector('#arrow')
+
+        addEventListener('scroll',()=>{
+        if(window.pageYOffset>90){
+            arrow.classList.add('show');
+        }else{
+            arrow.classList.remove('show');
+        }
+        });
         
          AOS.init();

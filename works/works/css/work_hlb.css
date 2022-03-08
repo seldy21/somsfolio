@@ -71,8 +71,19 @@ main .site_motto p{font-size: 20px; font-weight: 600; text-align: center;}
 main .site_motto p:nth-child(2){font-size: 25px; border:1px solid #FFBCBC; width: 50%; margin: 2vw auto 0; border-radius: 10px;}
 
 
-.toTop{background: url(../../works/images/arrow_back_black_24dp.svg) no-repeat 100% / cover; width: 40px; height: 40px; transform: rotate(90deg); text-indent: -9999px; position: fixed; bottom:4vw; right:-50px; transition: .5s;}
-.toTop.show{right:4vw;}
+.toTop{ position: fixed; bottom:50px; right:-50px; transition: .5s;border:#F38BA0 dashed 3px; width: 40px; height: 40px; border-radius: 50%; animation: spin 3s infinite;}
+
+@keyframes spin{
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+
+.toTop:hover{animation-play-state: paused;}
+
+
+#arrow{background: url(../../works/images/arrow_back_black_24dp.svg) no-repeat 100% / cover; width: 40px; height: 40px;transform: rotate(90deg);text-indent: -9999px;position: fixed; bottom:53px;right:-50px; transition: .5s;}
+.toTop.show{right:50px;}
+#arrow.show{right:53px;}
 
 footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
 
