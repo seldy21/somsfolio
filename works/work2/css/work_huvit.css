@@ -23,12 +23,15 @@ nav .menu .menu2{background-color: rgb(56, 56, 56);width: 30vw; padding-top:10px
 .toTop{position: fixed; right: -50px; bottom :5vw; background-color: rgb(194, 194, 194); color: #000; font-weight: 600; opacity: 0.7; border-radius: 30%; display: flex; justify-content: center; align-items: center; font-size: 12px; width: 30px; height: 30px; text-align: center; cursor: pointer; z-index: 10;transition: .5s;}
 .toTop.show{right:5vw;}
 
+main{overflow: hidden;}
 main .box{display:flex;align-items: flex-start;}
 main .box2{display:flex;align-items: flex-start;}
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{bottom:0;}
 
-main .info {display: flex; flex-direction: column; margin:0 auto;}
-main .info h1{order:2; margin:26px auto 6px;}
+.swiper{overflow: visible;}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{bottom:-15px;}
+
+main .info {display: flex; flex-direction: column; margin:3vw auto 0;}
+main .info h1{order:2; margin:40px auto 6px;}
 main .info h1 img{width: 71px; height: 69px;}
 main .info .title{order:3; margin: 0 auto;}
 main .info .title h2{font-size:1.813rem ; font-weight: 500;}
@@ -85,6 +88,9 @@ footer .more{display: flex; justify-content: space-around; padding: 20px 0 10px;
 
     nav .menu .menu1{width: 80vw; justify-content: center;}
     nav .menu .menu2{width: 20vw;display: flex; flex-direction: column; align-items: center;}
+
+    
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{bottom:-20px;}
 
     main section{width: 80vw; margin: 100px auto;}
 

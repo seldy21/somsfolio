@@ -13,6 +13,11 @@ aside ul li{ width:100vw;display: flex; justify-content: center; align-items: ce
 aside .slide_wrapper.active{right:0;}
 aside .slide_wrapper.active li{right:0;}
 aside ul li:nth-child(1){background-color: #FFBCBC; height: 30vh;transition: .6s; top:10vh;}
+aside ul li:nth-child(1) img:hover{animation: spin infinite 1.4s;}
+@keyframes spin{
+    from{transform: rotate(0);}
+    to{transform: rotate(350deg);}
+}
 aside ul img{width: 140px;}
 aside ul li:nth-child(2){background-color: #F38BA0; height: 30vh;top:40vh;transition: .6s .1s;}
 aside ul li:nth-child(3){background-color: #939FCD; height: 30vh; top:70vh;transition: .6s .3s;}
@@ -20,7 +25,7 @@ aside ul li:nth-child(3){background-color: #939FCD; height: 30vh; top:70vh;trans
 main .introduce{margin-top:10vh;background-color: #939FCD; color:#fff; padding:5vw 3vw;}
 
 main .skill{position: relative; padding:5vw 3vw;}
-main .skill h2{position: sticky;}
+main .skill h2{position: sticky; font-family: 'fugazOne',sans-serif;}
 main .skill img{width: 100px; position: absolute; right: 1vw;position:-99 ;}
 @media screen and (min-width:768px) {
     header h1{width: 85%; height: 15vh;}
@@ -40,4 +45,5 @@ main .skill img{width: 100px; position: absolute; right: 1vw;position:-99 ;}
     main {display: flex;}
     main .introduce{margin-top:15vh; position:fixed; z-index: -9; height: 100%; width: 30vw; word-break: keep-all;}
     main .skill{position: absolute;background-color: aliceblue;width: 58vw; right: 0;top:15vh;z-index: -9;height: 65vh;}
+    main .skill h2{font-size: 30px;}
 }

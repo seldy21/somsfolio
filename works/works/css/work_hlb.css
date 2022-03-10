@@ -25,7 +25,7 @@ main .gnb ul{display: flex; margin:1vw}
 main .gnb ul li{margin:1vw; font-size: 14px; font-weight: 600;}
 main .gnb ul li:nth-child(1){display: none;}
 main .gnb ul li .work_title{font-size: 12px; font-weight: 400;}
-.main_videoWrapper{display: flex; justify-content: center; background-color: #939FCD; width: 95%; margin:0 auto; height: 40vw; position: relative;}
+.main_videoWrapper{display: flex; justify-content: center; background-color: #364774; width: 95%; margin:0 auto; height: 40vw; position: relative;}
 video{width: 70%; position: absolute; bottom:0;}
 main .project_goal{word-break: keep-all; margin: 3vw auto; width: 90%;}
 h3{font-size: 20px; font-weight: 600; margin:5vw 0;}
