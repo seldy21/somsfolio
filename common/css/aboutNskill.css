@@ -23,10 +23,21 @@ aside ul li:nth-child(2){background-color: #F38BA0; height: 30vh;top:40vh;transi
 aside ul li:nth-child(3){background-color: #939FCD; height: 30vh; top:70vh;transition: .6s .3s;}
 
 main .introduce{margin-top:10vh;background-color: #939FCD; color:#fff; padding:5vw 3vw;}
+main h2{font-family: 'fugazOne',sans-serif;}
+
+.gform{width: 70vw; margin: 20px auto;}
+.gform label, input, button{display: block;}
+.gform input, textarea{outline: none; width: 100%;}
+.gform textarea{height: 30vh;}
+.gform a{display: inline-block; border:1px solid #000; padding:2px 10px;}
+
+
+.msg_modal{border: solid 3px #2A285E;color:#000;background-color: #fff; width: 90%; height: 400px; position: fixed; border-radius:20px;top:100px; left: 50%; transform: translateX(-50%); text-align: center;display: flex; flex-direction:column;justify-content: center; align-items: center;z-index: 99;display: none;}
+.msg_modal .close_btn{background-color: #2A285E; color: #fff; text-decoration: none; padding:7px 20px; position: absolute; bottom:20px; right:20px; transition: .5s; box-sizing: border-box; border-radius: 40px;}
+
 
 main .skill{position: relative; padding:5vw 3vw;}
-main .skill h2{position: sticky; font-family: 'fugazOne',sans-serif;}
-main .skill img{width: 100px; position: absolute; right: 1vw;position:-99 ;}
+main .skill img{width: 100px; position: absolute; left: 0;top:20px;position:-99 ;}
 @media screen and (min-width:768px) {
     header h1{width: 85%; height: 15vh;}
     header h1 a:hover img{transform: scale(1.1);}
@@ -43,7 +54,17 @@ main .skill img{width: 100px; position: absolute; right: 1vw;position:-99 ;}
     aside ul a:hover {color:#2A285E;}
     aside ul li{ width:60vw; font-size: 7rem;  right:-60vw;}
     main {display: flex;}
-    main .introduce{margin-top:15vh; position:fixed; z-index: -9; height: 100%; width: 30vw; word-break: keep-all;}
-    main .skill{position: absolute;background-color: aliceblue;width: 58vw; right: 0;top:15vh;z-index: -9;height: 65vh;}
-    main .skill h2{font-size: 30px;}
+    main h2{font-size: 30px;}
+    main .introduce{margin-top:15vh; position:fixed; z-index: -9; height: 100%; width: 40vw; word-break: keep-all; box-sizing: border-box;}
+    
+    .gform{width: 100%;}
+    .gform input, textarea{outline: none; width: 90%;}
+    .gform textarea{height: 150px;}
+
+    .msg_modal {width:30vw; left: 19vw; top:30%;}
+    .msg_modal .close_btn:hover{background-color: #fff; color:#2A285E;}
+
+    main .skill{position: absolute;background-color: #f0f8ff;width: 60vw; right: 0;top:15vh;z-index: -9; box-sizing: border-box;}
+    main .skill img{left:10vw;}
+    main .skillDetail h3{font-size: 20px;margin:25px 0 5px;}
 }

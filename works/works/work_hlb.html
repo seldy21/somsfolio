@@ -12,7 +12,9 @@
     <link rel="shortcut icon" href="../../common/favicon/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="../../common/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="../../common/favicon/apple-icon.png">
-    <link rel="manifest" href="../../common/favicon/site.webmanifest">
+    <link rel="icon" href="../../common/favicon/android-icon-192x192.png">
+    <link rel="shortcut icon" href="../../common/favicon/android-chrome-512x512.png">
+    <link rel="manifest" href="../../common/favicon/manifest.json">
 
     <link rel="stylesheet" href="../../common/css/normalize.css">
     <link rel="stylesheet" href="../../common/css/fonts.css">
@@ -58,7 +60,69 @@
                     <div class="work_title">view more</div>
                     <a href="work_gaguDoctor.html">GAGU DOCTOR</a>
                 </li>
+                <li>
+                    <div class="publBtn">PUBLISHING GUIDE</div>
+                </li>
             </ul>
+            <div class="modalWrapper">
+                <h2>PUBLISHING GUIDE</h2>
+                <div class="publeModal">
+                    <div class="publDetail">
+                        <h3>open graph 적용</h3>
+                    </div>
+                    <div class="publDetail">
+                        <h3>favicon</h3>
+                        <ul class="publExpln">
+                            <li>브라우저 스펙에 따라 많은 파일이 필요하지만 5개의 이미지와 1개의 JSON 파일로 파비콘 최적화</li>
+                            <li>.ico : 32x32 size, 예전 브라우저</li>
+                            <li>.svg : 대부분의 최신 브라우저, 다크모드 지원</li>
+                            <li>apple-icon.png : 180x180 size, 애플기기</li>
+                            <li>android-icon-192x192.png : 홈스크린</li>
+                            <li>android-chrome-512x512.png : PWA 로딩 시 스플래시 스크린</li>
+                            <li>manifest : PWA 및 안드로이드 기기</li>
+                        </ul>
+                    </div>
+                    <div class="publDetail">
+                        <h3>HTML</h3>
+                        <ul class="publExpln">
+                            <li>w3c validator 검사</li>
+                            <li>주 브라우저는 chrome을 기준으로 작업</li>
+                            <li>자식, 자손 요소 들여쓰기. tab 한 번은 4번의 공백으로 설정</li>
+                            <li>div 태그에는 필히 class 값 작성</li>
+                            <li>class 값은 해당 콘텐츠와 최대한 연관된 단어로 작성. 비슷한 내용이 있는 경우 숫자로 구분</li>
+                            <li>비슷하게 연속되는 콘텐츠의 경우 ul 태그 내 li 태그로 작성</li>
+                            <li>최상위 공통 선택자 *는 되도록 사용하지 않음</li>
+                        </ul>
+                    </div>
+                    <div class="publDetail">
+                        <h3>css</h3>
+                        <ul class="publExpln">
+                            <li>모든 페이지에 normalize.css와 fonts.css 연결</li>
+                            <li>@charset “utf-8”; 선언 후 작성</li>
+                            <li>연결된 html 태그 작성 순서를 고려하여 순차대로 진행</li>
+                            <li>width 등 사이즈에 되도록 소수점까지 표기하지는 않음</li>
+                            <li>a 태그의 display 값을 block 또는 inline-block으로 설정하여 width 값, height 값 지정</li>
+                        </ul>
+                    </div>
+                    <div class="publDetail">
+                        <h3>script</h3>
+                        <ul class="publExpln">
+                            <li>jQuery 사용을 위해 jquery-3.6.0.min.js 파일 사용</li>
+                            <li>슬라이드 메뉴에 swiper-bundle.min.js 파일 사용</li>
+                            <li>제작한 js파일의 경우 head 영역에 작성, defer 값을 부여</li>
+                        </ul>
+                    </div>
+                    <div class="publDetail">
+                        <h3>files</h3>
+                        <ul class="publExpln">
+                            <li>각 html과 연결하는 css, script는 외부문서로 연결</li>
+                            <li>파일명은 알파벳과 언더바로 구성</li>
+                            <li>같은 파일 종류대로 폴더에 정리</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="close_btn">닫기</div>
+            </div>
         </div>
         <div class="main_videoWrapper">
             <video src="video/ezgif.com-gif-maker.mp4" type="video/mp4" muted autoplay loop></video>
@@ -152,14 +216,14 @@
             </div>
         </div>
         <div class="comment">
-            <p>HBL 제약 웹 페이지 제작은 제가 처음으로 <strong>디자인과 퍼블리싱을 100% 자력</strong>으로 해낸 프로젝트입니다. </p>
+            <p>HBL 제약 웹 페이지 제작은 제가 <strong>처음으로 디자인과 퍼블리싱을 100% 자력</strong>으로 해낸 프로젝트입니다. </p>
             <p>웹 화면을 기준으로 제작을 하다보니 높이의 값을 px로 주는 것이 좋을지, vh로 주는 것이 좋을지 <span>고민을 많이 했습니다. 결론적으로는 px값으로 처리하였고, 나름대로 만족할만한 결과가 되었다고 생각합니다.</span> </p>
             <p>aos 스크립트를 적용할 때 New&Notice 부분이 나타나기 전에 <strong>오른쪽으로 스크롤이 생기는 문제</strong>가 있었습니다.<span>이는 section의 <strong>부모요소인 main에 width 값 100%를 부여하고, overflow 를 hidden으로 처리</strong>하여 온전하게 만들었습니다. </span></p>
             <p>모쪼록 해당 프로젝트가 보는 이로 편리함을 느끼게 하고, 디자인적으로 아름답게 보이기를 바랍니다.</p>
         </div>
         <div class="site_motto">
             <p class="typing"></p>
-            <p><a href="../work1/work_HLB.html" target="_blank">view work</a></p>
+            <p><a href="../work1/HLB.html" target="_blank">view work</a></p>
         </div>
         <div id="arrow">위로</div>
         <div class="toTop"></div>

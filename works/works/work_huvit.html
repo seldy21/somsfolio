@@ -13,7 +13,9 @@
     <link rel="shortcut icon" href="../../common/favicon/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="../../common/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="../../common/favicon/apple-icon.png">
-    <link rel="manifest" href="../../common/favicon/site.webmanifest">
+    <link rel="icon" href="../../common/favicon/android-icon-192x192.png">
+    <link rel="icon" href="../../common/favicon/android-chrome-512x512.png">
+    <link rel="manifest" href="../../common/favicon/manifest.json">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,7 +65,70 @@
                     <div class="work_title">view more</div>
                     <a href="work_gaguDoctor.html">GAGU DOCTOR</a>
                 </li>
+                <li>
+                    <div class="publBtn">PUBLISHING GUIDE</div>
+                </li>
             </ul>
+            <div class="modalWrapper">
+                <h2>PUBLISHING GUIDE</h2>
+                <div class="publeModal">
+                    <div class="publDetail">
+                        <h3>open graph 적용</h3>
+                    </div>
+                    <div class="publDetail">
+                        <h3>favicon</h3>
+                        <ul class="publExpln">
+                            <li>브라우저 스펙에 따라 많은 파일이 필요하지만 5개의 이미지와 1개의 JSON 파일로 파비콘 최적화</li>
+                            <li>.ico : 32x32 size, 예전 브라우저</li>
+                            <li>.svg : 대부분의 최신 브라우저, 다크모드 지원</li>
+                            <li>apple-icon.png : 180x180 size, 애플기기</li>
+                            <li>android-icon-192x192.png : 홈스크린</li>
+                            <li>android-chrome-512x512.png : PWA 로딩 시 스플래시 스크린</li>
+                            <li>manifest : PWA 및 안드로이드 기기</li>
+                        </ul>
+                    </div>
+                    <div class="publDetail">
+                        <h3>HTML</h3>
+                        <ul class="publExpln">
+                            <li>w3c validator 검사</li>
+                            <li>주 브라우저는 chrome을 기준으로 작업</li>
+                            <li>자식, 자손 요소 들여쓰기. tab 한 번은 4번의 공백으로 설정</li>
+                            <li>div 태그에는 필히 class 값 작성</li>
+                            <li>class 값은 해당 콘텐츠와 최대한 연관된 단어로 작성. 비슷한 내용이 있는 경우 숫자로 구분</li>
+                            <li>비슷하게 연속되는 콘텐츠의 경우 ul 태그 내 li 태그로 작성</li>
+                            <li>최상위 공통 선택자 *는 되도록 사용하지 않음</li>
+                        </ul>
+                    </div>
+                    <div class="publDetail">
+                        <h3>css</h3>
+                        <ul class="publExpln">
+                            <li>모든 페이지에 normalize.css와 fonts.css 연결</li>
+                            <li>가장 작은 viewport 사이즈는 width 값 375px로 설정</li>
+                            <li>@charset “utf-8”; 선언 후 작성</li>
+                            <li>연결된 html 태그 작성 순서를 고려하여 순차대로 진행</li>
+                            <li>width 등 사이즈에 되도록 소수점까지 표기하지는 않음</li>
+                            <li>a 태그의 display 값을 block 또는 inline-block으로 설정하여 width 값, height 값 지정</li>
+                        </ul>
+                    </div>
+                    <div class="publDetail">
+                        <h3>script</h3>
+                        <ul class="publExpln">
+                            <li>jQuery 사용을 위해 jquery-3.6.0.min.js 파일 사용</li>
+                            <li>슬라이드 메뉴에 swiper-bundle.min.js 파일 사용</li>
+                            <li>제작한 js파일의 경우 head 영역에 작성, defer 값을 부여</li>
+                        </ul>
+                    </div>
+                    <div class="publDetail">
+                        <h3>files</h3>
+                        <ul class="publExpln">
+                            <li>각 html과 연결하는 css, script는 외부문서로 연결</li>
+                            <li>파일명은 알파벳과 언더바로 구성</li>
+                            <li>같은 파일 종류대로 폴더에 정리</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="close_btn">닫기</div>
+            </div>
         </div>
         <div class="main_videoWrapper">
             <video src="video/huvit.mp4" type="video/mp4" muted autoplay loop></video>
@@ -136,24 +201,25 @@
                 <p>#swiper.js</p>
                 <p>#jQuery</p>
                 <p>#Ajax</p>
+                <p>#JSON</p>
                 <p>#mobile_first</p>
             </div>
             <ul class="publ_txt">
                 <li>a의 성격을 block으로 변경하여 작업 중 빈 공간에도 클릭의 영역이 나타나는 것을 확인하여 inline-block으로 수정</li>
                 <li>상품 슬라이드는 swiper.js 파일로 제어. loop 값을 주어 무한으로 반복.</li>
                 <li>맨 위로 스크롤 올라가게 하는 화살표는 첫 화면에서는 숨겨있다가 스크롤을 내리면 오른쪽에서 나타나게 함</li>
-                <li>swiper와 Ajax가 동시에 적용되지 않아서 swiper 효과가 들어가지 않은 '인기상품' 부분의 상품 배열에 Ajax와 JSON 파일을 사용.</li>
+                <li>swiper와 JSON이 동시에 정상적으로 적용되지 않아서 swiper 효과가 들어가지 않은 '인기상품' 부분의 상품 배열에 Ajax와 JSON 파일을 사용.</li>
             </div>
         </div>
         <div class="comment">
             <p>포트폴리오 작업 중 그나마 가장 무난하게 작업했던 프로젝트입니다. 반응형으로 제작하면서 상품 배치에 많은 고민을 했습니다.</p>
             <p>처음에는 화면이 작아지면 상품 슬라이드를 세로로 세우고, 화면이 넓어지면 슬라이드를 가로로 배치할 수 있도록 계획했었는데 모바일로 화면을 보는 경우 슬라이드의 움직임과 스크롤이 구분되기 어려울 것 같아서 <strong>슬라이드 방향은 가로로 그대로 두고 breakpoints로 슬라이드의 수를 조절</strong>했습니다.</p>
             <p>다만 아쉬운 점은 web에서 보이는 category의 각 섹션 높이값이 텍스트가 많은 섹션을 기준으로 일괄적으로 설정되어 다소 높게 느껴진다는 것입니다. 어떻게 설정해야 더 한눈에 편하게 보일지 조금 더 고민해봐야 할 것으로 보입니다.</p>
-            <p>간단하지만 Ajax와 JSON 파일을 적용해 본 페이지입니다. Ajax에 JSON을 연결해서 사용하는 과정에서 url을 작성하는 것이 매우 헷갈렸습니다. 이미지를 연결할 시 JSON파일을 기준으로 하는 것이 아니라 해당 페이지를 기준으로 url을 설정해야 했기 때문에 몇 번의 시행착오가 있었습니다.</p>
+            <p>간단하지만 <strong>Ajax와 JSON 파일을 적용</strong>해 본 페이지입니다. Ajax에 JSON을 연결해서 사용하는 과정에서 url을 작성하는 것이 매우 헷갈렸습니다. 이미지를 연결할 시 JSON파일을 기준으로 하는 것이 아니라 해당 페이지를 기준으로 url을 설정해야 했기 때문에 몇 번의 시행착오가 있었습니다.</p>
         </div>
         <div class="site_motto">
             <p class="typing"></p>
-            <p><a href="../work2/work_huvit.html" target="_blank">view work</a></p>
+            <p><a href="../work2/huvit.html" target="_blank">view work</a></p>
         </div>
         <div id="arrow">위로</div>
         <div class="toTop"></div>

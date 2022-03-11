@@ -26,7 +26,7 @@ main .gnb ul li{margin:1vw; font-size: 14px; font-weight: 600;}
 main .gnb ul li:nth-child(4){display: none;}
 main .gnb ul li .work_title{font-size: 12px; font-weight: 400;}
 .main_videoWrapper{display: flex; justify-content: center;  width: 95%; margin:0 auto; height: 43vw; position: relative; overflow: hidden;}
-.main_videoWrapper video{width:100%;}
+.main_videoWrapper img{width:100%;}
 main .project_goal{word-break: keep-all; margin: 3vw auto; width: 90%;}
 h3{font-size: 20px; font-weight: 600; margin:5vw 0;}
 main .project_goal .project_wrapper{display: flex; flex-direction: column;font-size: 15px;}

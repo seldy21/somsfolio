@@ -21,10 +21,11 @@ aside ul li:nth-child(3){background-color: #939FCD; height: 30vh; top:70vh;trans
 main {margin-top:10vh; position:relative; z-index: -99; width:100%; overflow: hidden;}
 main h2{font-size: 25px; font-family: 'fugazOne',sans-serif; padding:3vw; display: inline-block;}
 main .gnb{position: absolute; right: 0; top:0; z-index: 10;}
-main .gnb ul{display: flex; margin:1vw}
-main .gnb ul li{margin:1vw; font-size: 14px; font-weight: 600;}
-main .gnb ul li:nth-child(2){display: none;}
-main .gnb ul li .work_title{font-size: 12px; font-weight: 400;}
+main .gnb .modalWrapper{display: none;}
+main .gnb>ul{display: flex; margin:1vw}
+main .gnb>ul li{margin:1vw; font-size: 14px; font-weight: 600;}
+main .gnb>ul li:nth-child(2),main .gnb>ul li:nth-child(5){display: none;}
+main .gnb>ul li .work_title{font-size: 12px; font-weight: 400;}
 .main_videoWrapper{display: flex; justify-content: center; background-color: #f16a30; width: 95%; margin:0 auto; height: 40vw; position: relative;}
 video{width: 70%; position: absolute; bottom:0;}
 main .project_goal{word-break: keep-all; margin: 3vw auto; width: 90%;}
@@ -114,12 +115,25 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
     main .gnb{left: 15vw;}
     
     
-    main .gnb ul li:nth-child(2){display: block;}
-    main .gnb ul li .thisPage{color: #939FCD;}
-    main .gnb ul li{margin:2vw; font-size: 18px;}
-    main .gnb ul li a{transition: .3s;}
-    main .gnb ul li a:hover{color:#F38BA0;}
-    main .gnb ul li .work_title{font-size: 14px;}
+    main .gnb>ul li:nth-child(2),main .gnb>ul li:nth-child(5){display: block;}
+    main .gnb>ul li .thisPage{color: #939FCD;}
+    main .gnb>ul li{margin:2vw; font-size: 18px;}
+    main .gnb>ul li a{transition: .3s;}
+    main .gnb>ul li a:hover{color:#F38BA0;}
+    main .gnb>ul li .work_title{font-size: 14px;}
+    main .gnb>ul li:nth-child(5){align-self: flex-end;margin-left: auto; transition: .5s;}
+    main .gnb>ul li:nth-child(5):hover{cursor: pointer; color: #939FCD;}
+    main .gnb .modalWrapper{display:block;position: absolute;width: 75vw;background-color:#efefef;left: -30px; top: 10px; opacity: 0; visibility: hidden; color:#232323;overflow: hidden;height: auto; transition: .5s;}
+    main .gnb .modalWrapper.show{opacity: 1;visibility: visible;}
+    main .gnb .modalWrapper h2{font-size: 23px; padding:20px 0 0 20px;}
+    main .gnb .publeModal{display: flex; flex-wrap: wrap; justify-content: space-around;padding:0 30px 30px 30px;}
+    main .gnb .publeModal h3{font-size: 18px;margin:0;}
+    main .gnb .publeModal .publDetail{width:45%; margin: 20px 0;}
+    main .gnb .publeModal .publExpln{list-style-type: circle; margin-left: 20px;}
+    main .gnb .publeModal .publExpln li{margin:7px 0; word-break: keep-all;}
+    main .gnb .close_btn{position:absolute; right:20px; bottom:20px; cursor: pointer; border:#000000 solid 1px ;padding:5px; border-radius: 5px;width:60px; text-align: center; transition: .3s;}
+    main .gnb .close_btn:hover{background-color: #000; color:#fff;}
+
 
     .main_videoWrapper{height: 35vw; z-index: -9;}
     

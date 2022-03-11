@@ -5,16 +5,6 @@
             slide.classList.toggle('active');
         });
 
-        const guideModal=document.querySelector('.modalWrapper');
-        const guide=document.querySelector('.publBtn');
-        const closeModal=document.querySelector('.close_btn');
-        guide.addEventListener('click',()=>{
-            guideModal.classList.toggle('show');
-        })
-        closeModal.addEventListener('click',()=>{
-            guideModal.classList.remove('show');
-        })
-
         const topBar=document.querySelector('header');
         addEventListener('scroll',()=>{ 
         let top=document.querySelector('main h2');

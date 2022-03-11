@@ -12,6 +12,8 @@
     <link rel="shortcut icon" href="common/favicon/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="common/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="common/favicon/apple-icon.png">
+    <link rel="icon" href="common/favicon/android-icon-192x192.png">
+    <link rel="shortcut icon" href="common/favicon/android-chrome-512x512.png">
     <link rel="manifest" href="common/favicon/manifest.json">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +26,7 @@
 
 </head>
 <body>
+    <div id="loading"></div>
     <main>
         <h1><a href="#"><img src="common/images/mainLogo.svg" alt="메인로고"></a></h1>
         <div id="blank_1"></div>
@@ -68,21 +71,29 @@
         <h2 class="box contents2">
             <div id="about_wrapper">
                 <a href="about/aboutNskill.html" class="scroll"><span>about&skill</span></a>
-                <a href="about/aboutNskill.html" class="scroll"><span>about&skill</span></a>
-                <a href="about/aboutNskill.html" class="scroll"><span>about&skill</span></a>
-                <a href="about/aboutNskill.html" class="scroll"><span>about&skill</span></a>
-                <a href="about/aboutNskill.html" class="scroll"><span>about&skill</span></a>
-                <a href="about/aboutNskill.html" class="scroll"><span>about&skill</span></a>
-                <a href="about/aboutNskill.html" class="scroll"><span>about&skill</span></a>
-                <a href="about/aboutNskill.html" class="scroll"><span>about&skill</span></a>
-                <a href="about/aboutNskill.html" class="scroll"><span>about&skill</span></a>
-                <a href="about/aboutNskill.html" class="scroll"><span>about&skill</span></a>
-                <a href="about/aboutNskill.html" class="scroll"><span>about&skill</span></a>
-                <a href="about/aboutNskill.html" class="scroll"><span>about&skill</span></a>
-                <a href="about/aboutNskill.html" class="scroll"><span>about&skill</span></a>
+                <a href="about/aboutNskill.html" class="scroll"><span>about&skills</span></a>
+                <a href="about/aboutNskill.html" class="scroll"><span>about&skills</span></a>
+                <a href="about/aboutNskill.html" class="scroll"><span>about&skills</span></a>
+                <a href="about/aboutNskill.html" class="scroll"><span>about&skills</span></a>
+                <a href="about/aboutNskill.html" class="scroll"><span>about&skills</span></a>
+                <a href="about/aboutNskill.html" class="scroll"><span>about&skills</span></a>
+                <a href="about/aboutNskill.html" class="scroll"><span>about&skills</span></a>
+                <a href="about/aboutNskill.html" class="scroll"><span>about&skills</span></a>
+                <a href="about/aboutNskill.html" class="scroll"><span>about&skills</span></a>
+                <a href="about/aboutNskill.html" class="scroll"><span>about&skills</span></a>
+                <a href="about/aboutNskill.html" class="scroll"><span>about&skills</span></a>
+                <a href="about/aboutNskill.html" class="scroll"><span>about&skills</span></a>
             </div>
         </h2>
     </main>
     <footer>som's portfolio</footer>
+    <script>
+
+    window.onload = () => {
+    const loader = document.querySelector('#loading');
+    loader.classList.add('loading-out');
+    }
+
+    </script>
 </body>
 </html>

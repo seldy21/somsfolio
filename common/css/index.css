@@ -1,6 +1,11 @@
 @charset "utf-8";
 
 body a {color: #fff; text-decoration: none; display: block;}
+#loading{
+    background: url(../images/loading.gif) no-repeat 50% / cover; position: absolute;
+    width: 100%; height: 100%; display: flex; z-index: 999;
+}
+#loading.loading-out{visibility: hidden;}
 main{display: flex; flex-wrap: wrap; overflow: hidden;}
 main h1{background-color: #EDF6E5; width: 20%; height: 25vh; margin:0; display: flex; justify-content: center; align-items: center;}
 main h1:hover img{transform: scale(1.1);}
@@ -20,7 +25,6 @@ main #flow_wrapper{
 }
 @keyframes autoplay {
     0% { transform: translate3d(0, 0, 0) }
-    /* -50% so we are at the start again, thats why we have each slide twice  */
     100% { transform: translate3d(-50%, 0, 0) }
 }
 main #flow_wrapper:hover{animation-play-state: paused;}
@@ -33,7 +37,7 @@ main #flowers img:hover{
     animation: spin 1s infinite;}
 main #blank_2{width: 52%; height: 25vh; background:#EDF6E5 url(../../common/images/path2.svg) 100% / cover ;}
 
-main .contents1, main .contents2{font-family:'fugazOne', sans-serif; font-weight:400; display: flex; align-items: center;height: 25vh; font-size: 66pt;text-transform: capitalize;overflow: hidden;}
+main .contents1, main .contents2{font-family:'fugazOne', sans-serif; font-weight:400; display: flex; align-items: center;height: 25vh; font-size: 66pt;overflow: hidden;}
 
 main .slider-group{width: 66%;}
 main .contents1{background-color: #F38BA0;width: 100%;}
@@ -42,7 +46,6 @@ main .contents1 #work_wrapper{
 }
 @keyframes reverse-autoplay {
     0% { transform: translate3d(0, 0, 0) }
-    /* -50% so we are at the start again, thats why we have each slide twice  */
     100% { transform: translate3d(50%, 0, 0) }
 }
 main .contents1 #work_wrapper:hover{animation-play-state: paused;}
@@ -118,7 +121,7 @@ main .contents2 #about_wrapper:hover{animation-play-state: paused;}
 main .contents2 span{ display: block; margin:50px}
 
 main #blank_3{width: 34%; height: 25vh; background: #FFBCBC url(../../common/images/path3.svg) 100% / cover;text-align: right;}
-main #blank_3 a{color: transparent;}
+main #blank_3 a{color: transparent; display: block;font-size: 50px; height:25vh;}
 main .contents1 a:hover, main .contents2 a:hover{color: #2A285E; transition:.5s; }
 
 footer {position: absolute; bottom: 5px; left: 50%; transform: translate(-50%, -50%); color: #fff; }
