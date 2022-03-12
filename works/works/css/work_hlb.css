@@ -111,6 +111,11 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
     aside ul a {transition: .5s;}
     aside ul a:hover {color:#2A285E;}
     aside ul li{ width:60vw; font-size: 7rem;  right:-60vw;}
+    aside ul li:nth-child(1) img:hover{animation: spin infinite 1.4s;}
+    @keyframes spin{
+        from{transform: rotate(0);}
+        to{transform: rotate(350deg);}
+    }
     
     main{margin-top:15vh;}
     main h2{font-size: 30px; padding:3vw 4vw;}
@@ -128,7 +133,7 @@ footer{text-align: center; font-size: 13px; margin-bottom:3vw;}
     main .gnb>ul li a{transition: .3s;}
     main .gnb>ul li a:hover{color:#F38BA0;}
     main .gnb>ul li .work_title{font-size: 14px;}
-    main .gnb>ul li:nth-child(5){align-self: flex-end;margin-left: auto; transition: .5s;}
+    main .gnb>ul li:nth-child(5){align-self: flex-end;margin-left: auto; transition: .5s; border-bottom: #939FCD 5px solid;}
     main .gnb>ul li:nth-child(5):hover{cursor: pointer; color: #939FCD;}
     main .gnb .modalWrapper{display:block;position: absolute;width: 75vw;background-color:#efefef;left: -30px; top: 10px; opacity: 0; visibility: hidden; color:#232323;overflow: hidden;height: auto; transition: .5s;}
     main .gnb .modalWrapper.show{opacity: 1;visibility: visible;}

@@ -13,11 +13,6 @@ aside ul li{ width:100vw;display: flex; justify-content: center; align-items: ce
 aside .slide_wrapper.active{right:0;}
 aside .slide_wrapper.active li{right:0;}
 aside ul li:nth-child(1){background-color: #FFBCBC; height: 30vh;transition: .6s; top:10vh;}
-aside ul li:nth-child(1) img:hover{animation: spin infinite 1.4s;}
-@keyframes spin{
-    from{transform: rotate(0);}
-    to{transform: rotate(350deg);}
-}
 aside ul img{width: 140px;}
 aside ul li:nth-child(2){background-color: #F38BA0; height: 30vh;top:40vh;transition: .6s .1s;}
 aside ul li:nth-child(3){background-color: #939FCD; height: 30vh; top:70vh;transition: .6s .3s;}
@@ -30,6 +25,7 @@ main h2{font-family: 'fugazOne',sans-serif;}
 .gform input, textarea{outline: none; width: 100%;}
 .gform textarea{height: 30vh;}
 .gform a{display: inline-block; border:1px solid #000; padding:2px 10px;}
+.gform button{padding:5px 15px; margin:10px 40px 0 auto; border-radius: 5px;}
 
 
 .msg_modal{border: solid 3px #2A285E;color:#000;background-color: #fff; width: 90%; height: 400px; position: fixed; border-radius:20px;top:100px; left: 50%; transform: translateX(-50%); text-align: center;display: flex; flex-direction:column;justify-content: center; align-items: center;z-index: 99;display: none;}
@@ -53,18 +49,25 @@ main .skill img{width: 100px; position: absolute; left: 0;top:20px;position:-99 
     aside ul a {transition: .5s;}
     aside ul a:hover {color:#2A285E;}
     aside ul li{ width:60vw; font-size: 7rem;  right:-60vw;}
+    aside ul li:nth-child(1) img:hover{animation: spin infinite 1.4s;}
+    @keyframes spin{
+        from{transform: rotate(0);}
+        to{transform: rotate(350deg);}
+    }
     main {display: flex;}
     main h2{font-size: 30px;}
     main .introduce{margin-top:15vh; position:fixed; z-index: -9; height: 100%; width: 40vw; word-break: keep-all; box-sizing: border-box;}
     
-    .gform{width: 100%;}
-    .gform input, textarea{outline: none; width: 90%;}
+    .gform{width: 100%;font-family: 'NanumSquare_ac';}
+    .gform input, textarea{outline: none; width: 90%; padding:5px; border-radius: 5px;}
     .gform textarea{height: 150px;}
+    .gform button{cursor: pointer;}
 
     .msg_modal {width:30vw; left: 19vw; top:30%;}
     .msg_modal .close_btn:hover{background-color: #fff; color:#2A285E;}
 
-    main .skill{position: absolute;background-color: #f0f8ff;width: 60vw; right: 0;top:15vh;z-index: -9; box-sizing: border-box;}
+
+    main .skill{position: absolute;background-color: #fff7f7;width: 60vw; right: 0;top:15vh;z-index: -9; box-sizing: border-box;}
     main .skill img{left:10vw;}
     main .skillDetail h3{font-size: 20px;margin:25px 0 5px;}
 }
