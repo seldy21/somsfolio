@@ -48,13 +48,19 @@
                 밝고 톡톡튀는 아이디어와 그에 못지 않은 도전정신으로 무장되어 있는 저를 기대해 주세요!
             </p>
             <form class="gform" method="post" data-email="adasormable@gmail.com" action="https://script.google.com/macros/s/AKfycbwyv44cbLbMXTDzGflI3AHejCxvLFxzVPlV59JZ/exec">
-                <label for="user-name">Name :</label>
-                <input type="text" name="userName" id="user-name" placeholder="이곳에 이름을 작성해 주세요">
-                <label for="user-email">Your Email Address :</label>
-                <input type="email" name="userEmail" id="user-email" placeholder="이곳에 회신 가능한 메일 주소를 작성해 주세요" required>
-                <label for="txt_area">Contents : </label>
-                <textarea name="txtArea" id="txt_area" placeholder="이곳에 보낼 내용을 작성해 주세요" required></textarea>
-                <button type="submit">메일 보내기</button>
+                <div class="inputLine">
+                    <label for="user-name">Name</label>
+                    <input type="text" name="userName" id="user-name" placeholder="이곳에 이름을 작성해 주세요" required>
+                </div>
+                <div class="inputLine">
+                    <label for="user-email">Your Email Address</label>
+                    <input type="email" name="userEmail" id="user-email" placeholder="이곳에 회신 가능한 메일 주소를 작성해 주세요" required>
+                </div>
+                <div class="inputLine noUnderline">
+                    <label for="txt_area">Message</label>
+                    <textarea name="txtArea" id="txt_area" placeholder="이곳에 보낼 내용을 작성해 주세요" required></textarea>
+                </div>
+                <button type="submit"><span>SEND</span> <img src="../common/images/arrow.svg" alt=""></button>
                 <div class="msg_modal">
                     <h3>메일이 잘 전송되었습니다.</h3>
                     <p>곧 연락드리겠습니다.</p>

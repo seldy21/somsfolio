@@ -21,12 +21,15 @@ main .introduce{margin-top:10vh;background-color: #939FCD; color:#fff; padding:5
 main h2{font-family: 'fugazOne',sans-serif;}
 
 .gform{width: 70vw; margin: 20px auto;}
-.gform label, input, button{display: block;}
-.gform input, textarea{outline: none; width: 100%;}
-.gform textarea{height: 30vh;}
+.gform label, input, button{display: inline-block;}
+.gform label{font-weight: 600;}
+.gform input, textarea{outline: none; width: 100%; }
+.gform input{border:none;background-color: transparent;border-bottom: #fff solid 2px;}
+.gform textarea{height: 30vh; border:none;background-color: rgba(255, 255, 255, 0.568);}
 .gform a{display: inline-block; border:1px solid #000; padding:2px 10px;}
-.gform button{padding:5px 15px; margin:10px 40px 0 auto; border-radius: 5px;}
 
+.gform button{padding:5px 15px; margin:10px 0 0 auto; background-color: #EDF6E5; border:none; width: 100px; display: flex; justify-content: center; align-items: center;}
+.gform button img{width: 20px; transform: rotate(180deg);}
 
 .msg_modal{border: solid 3px #2A285E;color:#000;background-color: #fff; width: 90%; height: 400px; position: fixed; border-radius:20px;top:100px; left: 50%; transform: translateX(-50%); text-align: center;display: flex; flex-direction:column;justify-content: center; align-items: center;z-index: 99;display: none;}
 .msg_modal .close_btn{background-color: #2A285E; color: #fff; text-decoration: none; padding:7px 20px; position: absolute; bottom:20px; right:20px; transition: .5s; box-sizing: border-box; border-radius: 40px;}
@@ -59,9 +62,16 @@ main .skill img{width: 100px; position: absolute; left: 0;top:20px;position:-99 
     main .introduce{margin-top:15vh; position:fixed; z-index: -9; height: 100%; width: 40vw; word-break: keep-all; box-sizing: border-box;}
     
     .gform{width: 100%;font-family: 'NanumSquare_ac';}
-    .gform input, textarea{outline: none; width: 90%; padding:5px; border-radius: 5px;}
-    .gform textarea{height: 150px;}
-    .gform button{cursor: pointer;}
+    .gform .inputLine{display: flex;margin-top:15px; border-bottom: #fff solid 2px;}
+    .gform .noUnderline{border: none; background-color: rgba(255, 255, 255, 0.568);}
+    .gform .inputLine label{white-space: nowrap;}
+    .gform input, textarea{outline: none; padding:5px; }
+    .gform input {border:none;}
+    .gform textarea{height: 150px; background-color: transparent;}
+    .gform button{cursor: pointer; transition: .4s;}
+    .gform button img{width: 20px; transition: .4s; transform: rotate(0); margin-left: 2px;}
+    .gform button:hover img{transform: rotate(180deg);}
+    .gform button:hover{background-color: rgb(180, 180, 180); }
 
     .msg_modal {width:30vw; left: 19vw; top:30%;}
     .msg_modal .close_btn:hover{background-color: #fff; color:#2A285E;}
