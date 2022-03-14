@@ -63,7 +63,7 @@ main .skill .skillDetail{width: 100%;margin:20px 0;}
     }
     main {display: flex;}
     main h2{font-size: 30px;}
-    main .introduce{margin-top:15vh; position:fixed; z-index: -9; height: 100%; width: 40vw; word-break: keep-all; box-sizing: border-box;}
+    main .introduce{margin-top:15vh; position:fixed; z-index: -9; height: 100%; width: 40vw; word-break: keep-all; box-sizing: border-box; padding:2vw 3vw;}
     
     .gform{width: 100%;font-family: 'NanumSquare_ac';}
     .gform .inputLine{display: flex;border-bottom: #fff solid 2px; margin:20px 0;}
@@ -82,8 +82,8 @@ main .skill .skillDetail{width: 100%;margin:20px 0;}
     .msg_modal .close_btn:hover{background-color: #fff; color:#2A285E;}
 
 
-    main .skill{position: absolute;background-color: #fff7f7;width: 60vw; right: 0;top:15vh;z-index: -9; box-sizing: border-box;}
-    main .skill img{left:10vw; top:50px;width: 80px;}
+    main .skill{position: absolute;background-color: #fff7f7;width: 60vw; right: 0;top:15vh;z-index: -9; box-sizing: border-box; padding:2vw 3vw;}
+    main .skill img{left:10vw; top:20px;width: 80px;}
     main .skillDetail{margin:40px 0;}
     main .skillDetail h3{font-size: 20px;margin:25px 0 5px; padding-left:10px;}
     main .skillDetail .expln{padding-left:10px;}
