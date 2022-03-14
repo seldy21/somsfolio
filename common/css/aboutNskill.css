@@ -71,10 +71,11 @@ main .skill .skillDetail{width: 100%;}
     .gform input, textarea{outline: none; padding:5px; }
     .gform input {border:none;}
     .gform textarea{height: 150px; background-color: transparent;margin-top:10px;}
-    .gform button{cursor: pointer; transition: .4s;}
+    .gform button{cursor: pointer;box-shadow: 2px 2px;position: relative; transition: .4s;}
     .gform button img{width: 20px; transition: .4s; transform: rotate(0); margin-left: 2px;}
     .gform button:hover img{transform: rotate(180deg);}
-    .gform button:hover{background-color: rgb(180, 180, 180); }
+    .gform button:hover{background-color: rgb(180, 180, 180);}
+    .gform button:active{box-shadow: none; left: 2px; top:2px;}
 
     .msg_modal {width:30vw; left: 19vw; top:30%;}
     .msg_modal .close_btn:hover{background-color: #fff; color:#2A285E;}
@@ -83,5 +84,6 @@ main .skill .skillDetail{width: 100%;}
     main .skill{position: absolute;background-color: #fff7f7;width: 60vw; right: 0;top:15vh;z-index: -9; box-sizing: border-box;}
     main .skill img{left:10vw;}
     main .skillDetail{margin:40px 0;}
-    main .skillDetail h3{font-size: 20px;margin:25px 0 5px;}
+    main .skillDetail h3{font-size: 20px;margin:25px 0 5px; padding-left:7vw;}
+    main .skillDetail .expln{padding-left:3vw;}
 }
