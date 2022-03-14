@@ -37,6 +37,9 @@ main h2{font-family: 'fugazOne',sans-serif;}
 
 main .skill{position: relative; padding:5vw 3vw;}
 main .skill img{width: 100px; position: absolute; left: 0;top:20px;position:-99 ;}
+main .skill h3{border-bottom:dashed 2px #000;}
+main .skill .skillDetail{width: 70%;}
+
 @media screen and (min-width:768px) {
     header h1{width: 85%; height: 15vh;}
     header h1 a:hover img{transform: scale(1.1);}
@@ -62,12 +65,12 @@ main .skill img{width: 100px; position: absolute; left: 0;top:20px;position:-99 
     main .introduce{margin-top:15vh; position:fixed; z-index: -9; height: 100%; width: 40vw; word-break: keep-all; box-sizing: border-box;}
     
     .gform{width: 100%;font-family: 'NanumSquare_ac';}
-    .gform .inputLine{display: flex;margin-top:15px; border-bottom: #fff solid 2px;}
+    .gform .inputLine{display: flex;margin-top:15px; border-bottom: #fff solid 2px; margin:20px 0;}
     .gform .noUnderline{border: none; background-color: rgba(255, 255, 255, 0.568);}
-    .gform .inputLine label{white-space: nowrap;}
+    .gform .inputLine label{white-space: nowrap; margin:10px}
     .gform input, textarea{outline: none; padding:5px; }
     .gform input {border:none;}
-    .gform textarea{height: 150px; background-color: transparent;}
+    .gform textarea{height: 150px; background-color: transparent;margin-top:10px;}
     .gform button{cursor: pointer; transition: .4s;}
     .gform button img{width: 20px; transition: .4s; transform: rotate(0); margin-left: 2px;}
     .gform button:hover img{transform: rotate(180deg);}
