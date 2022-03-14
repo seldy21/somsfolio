@@ -36,9 +36,9 @@ main h2{font-family: 'fugazOne',sans-serif;}
 
 
 main .skill{position: relative; padding:5vw 3vw;}
-main .skill img{width: 100px; position: absolute; left: 0;top:20px;position:-99 ;}
+main .skill img{width: 100px; position: absolute; right:0;top:20px;position:-99 ;}
 main .skill h3{border-bottom:dashed 2px #000;}
-main .skill .skillDetail{width: 70%;}
+main .skill .skillDetail{width: 100%;}
 
 @media screen and (min-width:768px) {
     header h1{width: 85%; height: 15vh;}
@@ -82,5 +82,6 @@ main .skill .skillDetail{width: 70%;}
 
     main .skill{position: absolute;background-color: #fff7f7;width: 60vw; right: 0;top:15vh;z-index: -9; box-sizing: border-box;}
     main .skill img{left:10vw;}
+    main .skillDetail{margin:40px 0;}
     main .skillDetail h3{font-size: 20px;margin:25px 0 5px;}
 }
