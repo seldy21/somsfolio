@@ -33,7 +33,6 @@ $('.pc_ver').on('mouseleave',()=>{
 const nav=document.querySelector('nav');
 addEventListener('scroll',()=>{ 
   let top=document.querySelector('.topTitle');
-  console.log(top.offsetTop);
   if(scrollY>top.offsetTop){
       nav.classList.add('active');
   }else{
