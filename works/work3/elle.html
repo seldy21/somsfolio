@@ -28,15 +28,15 @@
 
     <script src="../../common/js/jquery-3.6.0.min.js"></script>
     <script src="../../common/js/swiper-bundle.min.js"></script>
-    <script src="../../common/js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="../../common/js/jquery.mb.YTPlayer.min.costomize.js"></script>
     <script defer src="js/elle.js"></script>
 </head>
 <body>
     <nav>
-        <ul class="pc_ver">
-            <li id="fashion">
+        <ul class="pcNav">
+            <li>
                 <a href="#">fashion</a>
-                <ul class="slides">
+                <ul class="slidesNav">
                     <li><a href="#">trends</a></li>
                     <li><a href="#">celebrity style</a></li>
                     <li><a href="#">how to</a></li>
@@ -48,9 +48,9 @@
                     <li><a href="#">watch</a></li>
                 </ul>
             </li>
-            <li id="beauty">
+            <li>
                 <a href="#">beauty</a>
-                <ul class="slides">
+                <ul class="slidesNav">
                     <li><a href="#">make-up</a></li>
                     <li><a href="#">skincare</a></li>
                     <li><a href="#">hair</a></li>
@@ -60,45 +60,53 @@
                     <li><a href="#">beauty item</a></li>
                 </ul>
             </li>
-            <li id="star">
+            <li>
                 <a href="#">star</a>
-                <ul class="slides">
+                <ul class="slidesNav">
                     <li><a href="#">interview</a></li>
                     <li><a href="#">gossip</a></li>
                     <li><a href="#">celeb news</a></li>
                 </ul>
             </li>
-            <li id="horoscope">
+            <li>
                 <a href="#">horoscope</a>
-                <ul class="slides"></ul>
+                <ul class="slidesNav"></ul>
             </li>
-            <li id="deco">
+            <li>
                 <a href="#">deco</a>
-                <ul class="slides">
+                <ul class="slidesNav">
                     <li><a href="#">decoration</a></li>
                     <li><a href="#">travel</a></li>
                     <li><a href="#">place</a></li>
                 </ul>
             </li>
         </ul>
-        <ul>
-            <li class="nav_color"><a href="#" >elle<span> shop</span></a></li>
-            <li class="login"><a href="#">login</a></li>
-            <li class="signup"><a href="#">signup</a></li>
-            <li id="search"><i class="icon-search"></i></li>
-            <li class="menu"><i class="icon-menu"></i></li>
-        </ul>
-        <ul class="slide_menu">
-            <li><a href="#">fashion</a></li>
-            <li><a href="#">beauty</a></li>
-            <li><a href="#">star</a></li>
-            <li><a href="#">horoscope</a></li>
-            <li><a href="#">deco</a></li>
+        <ul class="moNav">
+            <li><a href="#" class="shop">EllE<span>shop</span></a></li>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">SIGNUP</a></li>
+            <li>
+                <i class="icon-search search"></i>
+                <form action="#">
+                    <input type="text" placeholder="search" required>
+                    <button type="submit"><i class="icon-search"></i></button>
+                </form>
+            </li>
+            <li class="slideMenu">
+                <i class="icon-menu"></i>
+                <ul class="moContents">
+                    <li><a href="#">fashion</a></li>
+                    <li><a href="#">beauty</a></li>
+                    <li><a href="#">star</a></li>
+                    <li><a href="#">horoscope</a></li>
+                    <li><a href="#">deco</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <main>
-        <section id="part1">
-            <div class="main_logo">
+        <section id="intro">
+            <div class="logo">
                 <h1>elle</h1>
             </div>
             <div class="swiper">
@@ -140,56 +148,53 @@
                 <div class="swiperBtn swiper-button-prev"></div>
                 <div class="swiperBtn swiper-pagination"></div>
             </div>
-            <div class="latest">
+            <div class="articles">
                 <h2 class="font_imbue topTitle">THE LATEST HOT ISSUE</h2>
-                <div class="valentine">
-                    <a href="#"><img src="images/latest1.jpg" alt="valentine"></a>
+                <article class="valentine">
+                    <a href="#"><img src="images/latest1.jpg" alt="발렌타인데이"></a>
                     <h3 class="tagus20">VALENTINE'S DAY</h3>
                     <a href="#">
                         <p class="expln">달콤하고 행복한 밸런타인데이를 위해! 초콜릿 선물은 '여기'</p>
                     </a>
-                </div>
-                <div class="restaurant">
+                </article>
+                <article class="restaurant">
                     <a href="#"><img src="images/latest2.jpg" alt="restaurant"></a>
+                    <h3 class="tagus20">RECOMMEND</h3>
                     <a href="#">
                         <p class="expln">이국의 작은 동네에 온 듯한 느낌을 찾는다면? 해방촌 ·한남동 #신상맛집 3</p>
                     </a>
-                </div>
-                <div class="vintageShop">
+                </article>
+                <article class="vintageShop">
                     <a href="#"><img src="images/latest3.jpg" alt="vintageShop"></a>
                     <h3 class="tagus20">VINTAGE SHOP</h3>
                     <a href="#">
                         <p class="expln">김나영이 '플렉스'한 빈티지 숍, 여기!</p>
                     </a>
-                </div>
+                </article>
             </div>
-            <div class="weekly">
-                <h2 class=font_imbue>WEEKLY <span>HOT ISSUE</span></h2>
-                <div class="weekly_img">
-                    <a href="#">
-                        <img src="images/weekly1.jpg" alt="박신혜결혼사진">
-                        <p class="expln">박신혜가 직접 결혼식 정보 공답을? 추가 공개된 본식 사진과 들러리 화보까지!</p>
-                    </a>
-                </div>
-            </div>
+            <article class="weekly">
+                    <h2 class=font_imbue>WEEKLY <span>HOT ISSUE</span></h2>
+                    <div class="weekly_img">
+                        <a href="#"><img src="images/weekly1.jpg" alt="박신혜결혼사진"></a>
+                        <a href="#"><p class="expln">박신혜가 직접 결혼식 정보 공답을? 추가 공개된 본식 사진과 들러리 화보까지!</p></a>
+                    </div>
+            </article>
         </section>
-        <section id="part2">
+        <section id="musicPj">
             <h2>엘르의 두 번째 뮤직 프로젝트 '리커넥트 2021'</h2>
-            <div class="music pj1">
-                <a href="#">
-                    <img src="images/musicproject1.jpg" alt="뮤직프로젝트1">
-                    <p>노래를 이야기하는 뮤직비디오 감독 권오준</p>
-                </a>
-            </div>
-            <div class="music pj2">
-                <a href="#">
-                    <img src="images/musicproject2.jpg" alt="뮤직프로젝트2">
-                    <p>음악으로 하나된 'ELLE리커넥트' 역대급 라인업!</p>
-                </a>
-            </div>
+            <article class="musicpj1">
+                <a href="#"><img src="images/musicproject1.jpg" alt="뮤직프로젝트1"></a>
+                <a href="#"><h4>노래를 이야기하는 뮤직비디오 감독 권오준</h4></a>
+                
+            </article>
+            <article class="musicpj2">
+                <a href="#"><img src="images/musicproject2.jpg" alt="뮤직프로젝트1"></a>
+                <a href="#"><h4>음악으로 하나된 'ELLE리커넥트' 역대급 라인업!</h4></a>
+                
+            </article>
         </section>
-        <section id="part3">
-            <div class="horoscope">
+        <section id="contents">
+            <article class="horoscope">
                 <h3 class="tagus42">HOROSCOPE</h3>
                 <div class="horos_expln">
                     <a href="#"><img src="images/El_PC_horoscope_01.png" alt="물병자리"></a>
@@ -199,22 +204,18 @@
                         <p class="more"><a href="#">더보기</a></p>
                     </div>
                 </div>
-            </div>
-            <div class="fashion_1">
+            </article>
+            <article class="fashion_1">
                 <a href="#"><img src="images/new_model.jpg" alt="신예모델"></a>
-                <div class="part3_expln">
-                    <h3 class="tagus20">FASHION</h3>
-                    <a href="#">
-                        <h4>우리가 사랑할 새로운 얼굴들</h4>
-                        <p class="expln">2022년 지금, 예의주시해야 할 새롭고 청신한 얼굴의 영 모델들.</p>
-                    </a>
-                </div>
-            </div>
-            <div class="culture">
-                <div class="culture_img">
-                    <a href="#"><img src="images/emma.jpg" alt="에마매키"></a>
-                </div>
-                <div class="part3_expln">
+                <h3 class="tagus20">FASHION</h3>
+                <a href="#">
+                    <h4>우리가 사랑할 새로운 얼굴들</h4>
+                    <p class="expln">2022년 지금, 예의주시해야 할 새롭고 청신한 얼굴의 영 모델들.</p>
+                </a>
+            </article>
+            <article class="culture">
+                <a href="#"><img src="images/emma.jpg" alt="에마매키"></a>
+                <div class="culture_wrapper">
                     <h3 class="tagus20">CULTURE</h3>
                     <a href="#">
                         <h4>에마 매키의 화려한 도전</h4>
@@ -222,19 +223,17 @@
                         <p class="expln">애거사 크리스티표 클래식의 멋진 귀환! 영화 &lt;나일 강의 죽음&gt;에서 완전히 새로운 모습을 보여줄 에마 매키.</p>
                     </a>
                 </div>
-            </div>
+            </article>
         </section>
-        <section id="part4">
-            <div class="part4_txt">
-                <h3>FASHION</h3>
-                <a href="#">
-                    <h4>지금 가장 반짝이는 존재, <span>#이준호 #피아제</span></h4>
-                    <p class="expln">꽃미모와 반전 보이스로 여심을 홀려버린 배우 이준호와 피아제가 선사하는 완벽한 앙상블.</p>
-                </a>
-            </div>
-            <a href="#"><img src="images/junho.jpg" alt="이준호"></a>
+        <section id="interlude">
+            <h3 class="tagus42">FASHION</h3>
+            <article>
+                <h4>지금 가장 반짝이는 존재, <span>#이준호 #피아제</span></h4>
+                <p class="expln"><a href="#">꽃미모와 반전 보이스로 여심을 홀려버린 배우 이준호와 피아제가 선사하는 완벽한 앙상블.</a></p>
+                <a href="#"><img src="images/junho.jpg" alt="피아제 이준호"></a>
+            </article>
         </section>
-        <section id="part5">
+        <section id="youtube">
             <h3 class="tagus42">STAR</h3>
             <div class="video_box">
                 <div class="video">
@@ -278,81 +277,69 @@
                 </div>
             </div>
         </section>
-        <section id="part6">
-            <h3>ARTICLES</h3>
-            <div class="article_wrapper">
-                <article class="bg_blck" id="article1">
-                    <div class="article_title">
-                        <a href="#">
-                            <h4>엠마 스톤이 헤어진 지 6년 된 앤드류 가필드에게 화를 낸 이유는 납득이 된다 <span>(feat. 스포일러)</span></h4>
-                        </a>
-                    </div>
+        <section id="card_articles">
+            <h3 class="tagus42">ARTICLES</h3>
+            <ul>
+                <li id="article1">
+                    <a href="#">
+                        <h4>엠마 스톤이 헤어진 지 6년 된 앤드류 가필드에게 화를 낸 이유는 납득이 된다 <span>(feat. 스포일러)</span></h4>
+                    </a>
                     <p class="expln">
-                        <img src="images/spiderman_edit.jpg" alt="스파이더맨">
-                        <a href="#">2010년대를 풍미한 패셔니스타 커플.</a>
+                        <a href="#"><img src="images/spiderman_edit.jpg" alt="스파이더맨"><span>2010년대를 풍미한 패셔니스타 커플.</span></a>
                     </p>
-                </article>
-                <article id="article2">
-                    <div class="article_title">
-                        <a href="#">
-                            <h4>숨겨진 사복패션 고수! 레드벨벳 예리 스타일 탐구</h4>
-                        </a>
-                    </div>
+                </li>
+                <li id="article2">
+                    <a href="#">
+                        <h4>숨겨진 사복패션 고수! 레드벨벳 예리 스타일 탐구</h4>
+                    </a>
                     <p class="expln">
-                        <img src="images/yeri.jpg" alt="레드벨벳 예리">
-                        <a href="#">상큼하고 러블리한 에너지가 한가득! 요즘 같은 날씨에 참고하기 좋은 레드벨벳 예리의 스타일을 만나보세요.</a>
+                        <a href="#"><img src="images/yeri.jpg" alt="레드벨벳 예리"><span>상큼하고 러블리한 에너지가 한가득! 요즘 같은 날씨에 참고하기 좋은 레드벨벳 예리의 스타일을 만나보세요.</span></a>
                     </p>
-                </article>
-                <article class="bg_blck" id="article3">
-                    <div class="article_title">
-                        <a href="#">
-                            <h4>최소 한 달 치 피로 싹 날리기! 천연 암반수탕과 편백나무탕이 있는 양평 숙소 3 #소도시여행</h4>
-                        </a>
-                    </div>
+                </li>
+                <li id="article3">
+                    <a href="#">
+                        <h4>최소 한 달 치 피로 싹 날리기! 천연 암반수탕과 편백나무탕이 있는 양평 숙소 3 #소도시여행</h4>
+                    </a>
                     <p class="expln">
-                        <img src="images/travel_edit.jpg" alt="여행">
-                        <a href="#">그냥 숙소 안에서만 보내는 힐링여행을 원한다면 추천.</a>
+                        <a href="#"><img src="images/travel_edit.jpg" alt="여행"><span>그냥 숙소 안에서만 보내는 힐링여행을 원한다면 추천.</span></a>
                     </p>
-                </article>
-                <article id="article4">
-                    <div class="article_title">
-                        <a href="#">
-                            <h4>올해의 컬러 #베리페리</h4>
-                        </a>
-                    </div>
+                </li>
+                <li id="article4">
+                    <a href="#">
+                        <h4>올해의 컬러 #베리페리</h4>
+                    </a>
                     <p class="expln">
-                        <img src="images/color_edit.jpg" alt="올해의 컬러 베리페리">
-                        <a href="#">팬데믹 이후의 과거와 현재, 미래를 아우르는 컬러 '베리 페리(Very Peri)'를 만날 시간.</a>
+                        <a href="#"><img src="images/color_edit.jpg" alt="올해의 컬러 베리페리"><span>팬데믹 이후의 과거와 현재, 미래를 아우르는 컬러 '베리 페리(Very Peri)'를 만날 시간.</span></a>
                     </p>
-                </article>
-            </div>
+                </li>
+            </ul>
         </section>
-        <section id="part7">
-            <div class="part7_article">
+        <div class="articles">
+            <article class="mensbeauty">
                 <a href="#"><img src="images/mensbeauty.jpg" alt="남자향수"></a>
                 <h3 class="tagus20">BEAUTY</h3>
                 <a href="#">
                     <h4>그의 향기는 내가 정한다</h4>
                     <p class="expln">남자 향수 & 화장품_선배'S 어드바이스 #103</p>
                 </a>
-            </div>
-            <div class="part7_article">
+            </article>
+            <article class="pants">
                 <a href="#"><img src="images/low-riseFashion.jpg" alt="로라이즈 팬츠"></a>
                 <h3 class="tagus20">BEAUTY</h3>
                 <a href="#">
                     <h4>로 라이즈의 귀환</h4>
                     <p class="expln">아슬아슬하게 내려 입을수록 극적이다. Y2K 패션 신드롬과 함께 돌아온 로 라이즈 룩.</p>
                 </a>
-            </div>
-            <div class="part7_article">
+            </article>
+            <article class="celeb">
                 <a href="#"><img src="images/star.jpg" alt="유재석과 송은이"></a>
                 <h3 class="tagus20">STAR</h3>
                 <a href="#">
                     <h4>31년 우정 유재석X송은이</h4>
                     <p class="expln">"같이 반신욕도 가능" 이미 남사친X여사친의 영역을 넘은 31년 우정</p>
                 </a>
-            </div>
-        </section>
+            </article>
+        </div>
     </main>
     <footer>
         <div class="line slider">
@@ -379,9 +366,12 @@
             <li><a href="#">윤리경영</a></li>
         </ul>
         <ul class="social_media tagus20">
-            <li><a href="#">TWITTER</a>·</li>
-            <li><a href="#">INSTAGRAM</a>·</li>
-            <li><a href="#">DRIBBLE</a>·</li>
+            <li><a href="#">TWITTER</a></li>
+            <li>·</li>
+            <li><a href="#">INSTAGRAM</a></li>
+            <li>·</li>
+            <li><a href="#">DRIBBLE</a></li>
+            <li>·</li>
             <li><a href="#">BEHANCE</a></li>
         </ul>
     </footer>
