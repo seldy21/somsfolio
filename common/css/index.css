@@ -1,132 +1,238 @@
 @charset "utf-8";
 
-body a {color: #fff; text-decoration: none; display: block;}
+body a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
 /*#loading{
     background: url(../images/loading.gif) no-repeat 50% / cover; position: absolute;
     width: 100%; height: 100%; display: flex; z-index: 999;
 }
 #loading.loading-out{visibility: hidden;}*/
-main{display: flex; flex-wrap: wrap; overflow: hidden;}
-main h1{background-color: #EDF6E5; width: 20%; height: 25vh; margin:0; display: flex; justify-content: center; align-items: center;}
-main h1:hover img{transform: scale(1.1);}
-main h1 img{width: 12vw; transition: .5s;}
-main #blank_1{width: 80%; height: 25vh;background: #F38BA0 url(../../common/images/path1.svg) no-repeat 100% / cover;}
-
-main h2{margin:0;}
-:root {--carousel-speed: 17s}
-main #flowers{ 
-    overflow:hidden; display:flex;align-items: center; background-color: 
-    #FFBCBC; height: 25vh; width: 48%;
+main {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
-main #flow_wrapper{
-    display:flex;
-    animation: autoplay var(--carousel-speed) linear infinite;
-    animation-play-state: running;
+main h1 {
+  background-color: #edf6e5;
+  width: 20%;
+  height: 25vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main h1:hover img {
+  transform: scale(1.1);
+}
+main h1 img {
+  width: 12vw;
+  transition: 0.5s;
+}
+main #blank_1 {
+  width: 80%;
+  height: 25vh;
+  background: #f38ba0 url(../../common/images/path1.svg) no-repeat 100% / cover;
+}
+
+main h2 {
+  margin: 0;
+}
+:root {
+  --carousel-speed: 17s;
+}
+main #flowers {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: #ffbcbc;
+  height: 25vh;
+  width: 48%;
+}
+main #flow_wrapper {
+  display: flex;
+  animation: autoplay var(--carousel-speed) linear infinite;
+  animation-play-state: running;
 }
 @keyframes autoplay {
-    0% { transform: translate3d(0, 0, 0) }
-    100% { transform: translate3d(-50%, 0, 0) }
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
 }
-main #flow_wrapper:hover{animation-play-state: paused;}
-main #flowers img{width: 100px; margin:0 40px}
+main #flow_wrapper:hover {
+  animation-play-state: paused;
+}
+main #flowers img {
+  width: 100px;
+  margin: 0 40px;
+}
 @keyframes spin {
-    0%{transform:rotate(0);}
-    100%{transform: rotate(360deg);}
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-main #flowers img:hover{
-    animation: spin 1s infinite;}
-main #blank_2{width: 52%; height: 25vh; background:#EDF6E5 url(../../common/images/path2.svg) 100% / cover ;}
+main #flowers img:hover {
+  animation: spin 1s infinite;
+}
+main #blank_2 {
+  width: 52%;
+  height: 25vh;
+  background: #edf6e5 url(../../common/images/path2.svg) 100% / cover;
+}
 
-main .contents1, main .contents2{font-family:'fugazOne', sans-serif; font-weight:400; display: flex; align-items: center;height: 25vh; font-size: 66pt;overflow: hidden;}
+main .contents1,
+main .contents2 {
+  font-family: "fugazOne", sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  height: 25vh;
+  font-size: 66pt;
+  overflow: hidden;
+}
 
-main .slider-group{width: 66%;}
-main .contents1{background-color: #F38BA0;width: 100%;}
-main .contents1 #work_wrapper{
-    display:flex;
+main .slider-group {
+  width: 66%;
+}
+main .contents1 {
+  background-color: #f38ba0;
+  width: 100%;
+}
+main .contents1 #work_wrapper {
+  display: flex;
 }
 @keyframes reverse-autoplay {
-    0% { transform: translate3d(0, 0, 0) }
-    100% { transform: translate3d(50%, 0, 0) }
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(50%, 0, 0);
+  }
 }
-main .contents1 #work_wrapper:hover{animation-play-state: paused;}
-main .contents1 span{display: block; width: 400px;}
-
+main .contents1 #work_wrapper:hover {
+  animation-play-state: paused;
+}
+main .contents1 span {
+  display: block;
+  width: 400px;
+}
 
 :root {
-    --slide-spacer: 40px;
-    --slide-width: clamp(200px, 25vw, 400px);
-    --slide-count: 9;
-    --time-per-slide: 14s;
+  --slide-spacer: 40px;
+  --slide-width: clamp(200px, 25vw, 400px);
+  --slide-count: 9;
+  --time-per-slide: 14s;
 }
 .slider-group {
-    background: var(--slider-bg);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+  background: var(--slider-bg);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 .slider {
-    overflow: hidden;
-    overflow: clip;
+  overflow: hidden;
+  overflow: clip;
 }
 .slide {
-    aspect-ratio: 2;
-    border-radius: 18px;
-    margin-right: var(--slide-spacer);
-    min-height: 150px;
-    min-width: var(--slide-width);
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    justify-content: center;
-    position: relative;
-    transform: scale(0.99);
-    /*-webkit-backface-visibility: hidden;*/
-    transition: transform 0.2s;
+  aspect-ratio: 2;
+  border-radius: 18px;
+  margin-right: var(--slide-spacer);
+  min-height: 150px;
+  min-width: var(--slide-width);
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+  position: relative;
+  transform: scale(0.99);
+  /*-webkit-backface-visibility: hidden;*/
+  transition: transform 0.2s;
 }
 .slide-track {
-    display: flex;
-    transform: translateX(0);
-    will-change: transform;
-    -webkit-backface-visibility: hidden;
-    --slide-total-width: calc(var(--slide-width) + var(--slide-spacer));
-    --slide-duration: calc(var(--slide-count) * var(--time-per-slide, 10s));
+  display: flex;
+  transform: translateX(0);
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  --slide-total-width: calc(var(--slide-width) + var(--slide-spacer));
+  --slide-duration: calc(var(--slide-count) * var(--time-per-slide, 10s));
 }
 .reverse .slide-track {
-    animation: scroll-reverse var(--slide-duration, 25s) linear infinite both;
-    font-size: 8rem;
+  animation: scroll-reverse var(--slide-duration, 25s) linear infinite both;
+  font-size: 8rem;
 }
 @keyframes scroll-reverse {
-    0% {
-        transform: translateX(calc(var(--slide-total-width) * -9));
-   }
-    100% {
-        transform: translateX(0);
-   }
+  0% {
+    transform: translateX(calc(var(--slide-total-width) * -9));
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 .reverse .slide-track {
-    animation: scroll-reverse /*var(--slide-duration, 25s)*/var(--carousel-speed) linear infinite both;
-    font-size: 66pt;
+  animation: scroll-reverse /*var(--slide-duration, 25s)*/ var(--carousel-speed)
+    linear infinite both;
+  font-size: 66pt;
 }
 
-main .contents2{background-color: #939FCD; width: 100%;}
-main .contents2 #about_wrapper{
-    display: flex;
-    animation: autoplay var(--carousel-speed) linear infinite;
-    animation-play-state: running;
+main .contents2 {
+  background-color: #939fcd;
+  width: 100%;
 }
-main .contents2 #about_wrapper:hover{animation-play-state: paused;}
-main .contents2 span{ display: block; margin:50px}
+main .contents2 #about_wrapper {
+  display: flex;
+  animation: autoplay var(--carousel-speed) linear infinite;
+  animation-play-state: running;
+}
+main .contents2 #about_wrapper:hover {
+  animation-play-state: paused;
+}
+main .contents2 span {
+  display: block;
+  margin: 50px;
+}
 
-main #blank_3{width: 34%; height: 25vh; background: #FFBCBC url(../../common/images/path3.svg) 100% / cover;text-align: right;}
-main #blank_3 a{color: transparent; display: block;font-size: 50px; height:25vh;}
-main .contents1 a:hover, main .contents2 a:hover{color: #2A285E; transition:.5s; }
+main #blank_3 {
+  width: 34%;
+  height: 25vh;
+  background: #ffbcbc url(../../common/images/path3.svg) 100% / cover;
+  text-align: right;
+}
+main #blank_3 a {
+  color: transparent;
+  display: block;
+  font-size: 50px;
+  height: 25vh;
+}
+main .contents1 a:hover,
+main .contents2 a:hover {
+  color: #2a285e;
+  transition: 0.5s;
+}
 
-footer {position: absolute; bottom: 5px; left: 50%; transform: translate(-50%, -50%); color: #fff; }
+footer {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
 
-@media screen and (max-width:768px) {
-    main h1{width: 100%;}
-    main #blank_1{display: none;}
+@media screen and (max-width: 768px) {
+  main h1 {
+    width: 100%;
+  }
+  main #blank_1 {
+    display: none;
+  }
 }

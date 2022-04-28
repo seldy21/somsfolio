@@ -1,325 +1,967 @@
 @charset "utf-8";
 
 /*전체 폰트, 정렬 등 설정*/
-body{font-family: 'Noto Sans KR',돋움,sans-serif;}
-ul{list-style: none; padding:0; margin:0;}
-a{text-decoration: none; color:inherit; display: inline-block;}
-h1,h2,h3,h4{margin:0; word-break: keep-all;}
-h4{ display: inline-block;}
-div, p{word-break: keep-all;}
-p{margin:5px 0;}
-img{width:100%;}
-.font_imbue{font-family: 'imbue',바탕,serif; font-weight: 500; margin:3vw 0 3vw; font-size: 1.7rem; text-align: center; word-break:keep-all;}
-.tagus20{font-family: 'Tagus','맑은 고딕',돋움,sans-serif; font-weight: 400; font-size: 0.9rem;}
-.tagus42{font-family: 'Tagus','맑은 고딕',돋움,sans-serif; font-size: 2.1rem;}
-.expln{font-size:0.9rem}
+body {
+  font-family: "Noto Sans KR", 돋움, sans-serif;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  word-break: keep-all;
+}
+h4 {
+  display: inline-block;
+}
+div,
+p {
+  word-break: keep-all;
+}
+p {
+  margin: 5px 0;
+}
+img {
+  width: 100%;
+}
+.font_imbue {
+  font-family: "imbue", 바탕, serif;
+  font-weight: 500;
+  margin: 3vw 0 3vw;
+  font-size: 1.7rem;
+  text-align: center;
+  word-break: keep-all;
+}
+.tagus20 {
+  font-family: "Tagus", "맑은 고딕", 돋움, sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.tagus42 {
+  font-family: "Tagus", "맑은 고딕", 돋움, sans-serif;
+  font-size: 2.1rem;
+}
+.expln {
+  font-size: 0.9rem;
+}
 
 /*모바일 버전 우선 작성*/
 /*nav*/
-nav .moNav{display: flex; padding:10px 0 10px; border-bottom:1px solid #000; position: fixed; z-index: 10000; background-color: #fff; width: 100vw; height:28px;top:0;}
-nav .moNav>li:nth-child(1){color:red; margin-right:auto;}
-nav .moNav>li{margin: 0 1.5vw;}
-nav .moNav>li span{font-size: 10px;}
-nav .moNav .slideMenu ul{display: none;}
-nav .pcNav{display: none;}
+nav .moNav {
+  display: flex;
+  padding: 10px 0 10px;
+  border-bottom: 1px solid #000;
+  position: fixed;
+  z-index: 10000;
+  background-color: #fff;
+  width: 100vw;
+  height: 28px;
+  top: 0;
+}
+nav .moNav > li:nth-child(1) {
+  color: red;
+  margin-right: auto;
+}
+nav .moNav > li {
+  margin: 0 1.5vw;
+}
+nav .moNav > li span {
+  font-size: 10px;
+}
+nav .moNav .slideMenu ul {
+  display: none;
+}
+nav .pcNav {
+  display: none;
+}
 
 /*클릭하면 내려오는 슬라이드 메뉴*/
-nav .moNav .slideMenu ul{position:absolute; top:49px; background-color: #fff;left: 0; width: 100%; text-align: center; height: 100vh; font-size: 30px; z-index: 10000; overflow: hidden;}
-nav .moNav .slideMenu ul li{margin:60px 0;}
+nav .moNav .slideMenu ul {
+  position: absolute;
+  top: 49px;
+  background-color: #fff;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+  font-size: 30px;
+  z-index: 10000;
+  overflow: hidden;
+}
+nav .moNav .slideMenu ul li {
+  margin: 60px 0;
+}
 
 /*검색어 입력창*/
-nav form{position:absolute; top:49px;left: 0; background-color: #fff; width: 100vw;display: flex; justify-content: center; height:0; overflow: hidden; transition:.3s;}
-nav form.searchSlide{height:40px;  padding: 15px 0; }
-nav form input{width: 80%; padding:5px; box-sizing: border-box; border:none; border-bottom:1px solid #000;}
-nav form button{border-radius: 20px; font-size: 1.2rem; background-color: #000; color:#fff;}
-
+nav form {
+  position: absolute;
+  top: 49px;
+  left: 0;
+  background-color: #fff;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+nav form.searchSlide {
+  height: 40px;
+  padding: 15px 0;
+}
+nav form input {
+  width: 80%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+nav form button {
+  border-radius: 20px;
+  font-size: 1.2rem;
+  background-color: #000;
+  color: #fff;
+}
 
 /*main 중 로고 부분*/
-main #intro .logo{background-color: #000; margin:68px auto 20px; width: 95vw; height: 30vw; display: flex; align-items: center; justify-content: center;}
-main .logo h1{background: #000 url(../images/ELLEwhite.svg) no-repeat 50% / cover; text-indent: -9999px; width: 40vw; height:15vw;}
+main #intro .logo {
+  background-color: #000;
+  margin: 68px auto 20px;
+  width: 95vw;
+  height: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .logo h1 {
+  background: #000 url(../images/ELLEwhite.svg) no-repeat 50% / cover;
+  text-indent: -9999px;
+  width: 40vw;
+  height: 15vw;
+}
 
 /*main 중 slider 부분*/
-main #intro .swiper{
-    width: 100%; height: 63vh;
-    --swiper-navigation-color:rgba(255, 255, 255,0.6);
-    --swiper-pagination-color:#fff;
+main #intro .swiper {
+  width: 100%;
+  height: 63vh;
+  --swiper-navigation-color: rgba(255, 255, 255, 0.6);
+  --swiper-pagination-color: #fff;
 }
-main #intro .swiper .swiper-slide{position:relative;}
-main #intro .swiper .swiper-wrapper{width: 100%; height: 100%;}
-main #intro .swiper .swiper-wrapper .swiper-slide{width: 100%; height: 100%;}
-main #intro .swiper .swiper-wrapper .bg1{background: url(../images/main_model.jpg) no-repeat 50% / cover;}
-main #intro .swiper .swiper-wrapper .bg2{background: url(../images/main_miju.jpg) no-repeat 50% / cover;}
-main #intro .swiper .swiper-wrapper .bg3{background: url(../images/main_cafe.jpg) no-repeat 100% / cover;}
-main #intro .swiper .swiper-wrapper .bg4{background: url(../images/main_cos.jpg) no-repeat 50% / cover;}
+main #intro .swiper .swiper-slide {
+  position: relative;
+}
+main #intro .swiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+main #intro .swiper .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+main #intro .swiper .swiper-wrapper .bg1 {
+  background: url(../images/main_model.jpg) no-repeat 50% / cover;
+}
+main #intro .swiper .swiper-wrapper .bg2 {
+  background: url(../images/main_miju.jpg) no-repeat 50% / cover;
+}
+main #intro .swiper .swiper-wrapper .bg3 {
+  background: url(../images/main_cafe.jpg) no-repeat 100% / cover;
+}
+main #intro .swiper .swiper-wrapper .bg4 {
+  background: url(../images/main_cos.jpg) no-repeat 50% / cover;
+}
 
 /*slider의 내용 정렬*/
-main #intro .swiper .swiper-slide{display: flex; align-items: flex-end;}
-main #intro .swiper .swiper-slide>a{margin:25px 30px; color:#fff;}
+main #intro .swiper .swiper-slide {
+  display: flex;
+  align-items: flex-end;
+}
+main #intro .swiper .swiper-slide > a {
+  margin: 25px 30px;
+  color: #fff;
+}
 
 /*articles 정렬*/
-main .articles{margin:40px auto 40px; display: flex; flex-direction: column;align-items: center;}
-main .articles article{width:80vw; margin-bottom:25px;}
-main .weekly{margin:40px 0 50px;}
+main .articles {
+  margin: 40px auto 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .articles article {
+  width: 80vw;
+  margin-bottom: 25px;
+}
+main .weekly {
+  margin: 40px 0 50px;
+}
 
 /*뮤직프로젝트 정렬*/
-main #musicPj{background-color: #000; display: flex; flex-direction: column; align-items: center; padding:30px 0;}
-main #musicPj h2, main #musicPj h4{color:#fff;}
-main #musicPj h2{font-size: 1.1rem; text-align: center; margin-bottom:10px;}
-main #musicPj h4{font-size: 0.9rem; font-weight: 400; margin-top:5px;}
-main #musicPj article{width:80vw; margin:15px 0;}
+main #musicPj {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+main #musicPj h2,
+main #musicPj h4 {
+  color: #fff;
+}
+main #musicPj h2 {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+main #musicPj h4 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 5px;
+}
+main #musicPj article {
+  width: 80vw;
+  margin: 15px 0;
+}
 
 /*콘텐츠 정렬*/
-main #contents{margin:20px auto;}
-main #contents article{width:90vw;}
+main #contents {
+  margin: 20px auto;
+}
+main #contents article {
+  width: 90vw;
+}
 
 /*별자리부분*/
-main #contents .horoscope{margin:40px auto 50px; border-bottom:1px solid #000; padding-bottom:30px;}
-main #contents .horos_expln{display: flex; flex-direction: column; align-items: center;}
-main #contents .horos_expln img{width:40vw;height:40vw;}
-main #contents .horos_expln p{margin:5px 0;}
-main #contents .horos_expln .txt{display: flex; flex-direction: column;}
-main #contents .horos_expln #horos_name{font-size: 0.75rem; margin-left: auto;}
-main #contents .horos_expln .more{font-size: 0.85rem; margin-left: auto; font-weight: 600;}
+main #contents .horoscope {
+  margin: 40px auto 50px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 30px;
+}
+main #contents .horos_expln {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #contents .horos_expln img {
+  width: 40vw;
+  height: 40vw;
+}
+main #contents .horos_expln p {
+  margin: 5px 0;
+}
+main #contents .horos_expln .txt {
+  display: flex;
+  flex-direction: column;
+}
+main #contents .horos_expln #horos_name {
+  font-size: 0.75rem;
+  margin-left: auto;
+}
+main #contents .horos_expln .more {
+  font-size: 0.85rem;
+  margin-left: auto;
+  font-weight: 600;
+}
 
 /*콘텐츠 중 모델, 에마 매키 부분*/
-main #contents article{margin: 0 auto 30px;}
-main #contents article.culture{border-bottom:1px solid #000; padding-bottom:40px}
+main #contents article {
+  margin: 0 auto 30px;
+}
+main #contents article.culture {
+  border-bottom: 1px solid #000;
+  padding-bottom: 40px;
+}
 
 /*이준호 부분*/
-main #interlude{margin: 40px 0; text-align: right;}
+main #interlude {
+  margin: 40px 0;
+  text-align: right;
+}
 
 /*비디오 정렬*/
-.video{margin:3vw;}
+.video {
+  margin: 3vw;
+}
 
 /*card articles 정렬*/
-main #card_articles{margin:30px 6vw;}
-main #card_articles ul{margin:20px 0;}
-main #card_articles ul li{border:2px solid #000; padding: 5vw; height: 25vh;}
-main #card_articles ul li:nth-child(2),main #card_articles ul li:nth-child(4){background-color: #000; color:#fff;}
-main #card_articles ul li img{border-radius: 50%; width:15vw; height: 15vw; margin: 3vw 3vw 3vw 0;}
-main #card_articles ul li .expln {padding:1vw;}
-main #card_articles ul li .expln a{display: flex; align-items: center;}
-main #card_articles ul li .expln span{display: block;}
-main #card_articles ul li h4{font-size: 1.1rem;}
+main #card_articles {
+  margin: 30px 6vw;
+}
+main #card_articles ul {
+  margin: 20px 0;
+}
+main #card_articles ul li {
+  border: 2px solid #000;
+  padding: 5vw;
+  height: 25vh;
+}
+main #card_articles ul li:nth-child(2),
+main #card_articles ul li:nth-child(4) {
+  background-color: #000;
+  color: #fff;
+}
+main #card_articles ul li img {
+  border-radius: 50%;
+  width: 15vw;
+  height: 15vw;
+  margin: 3vw 3vw 3vw 0;
+}
+main #card_articles ul li .expln {
+  padding: 1vw;
+}
+main #card_articles ul li .expln a {
+  display: flex;
+  align-items: center;
+}
+main #card_articles ul li .expln span {
+  display: block;
+}
+main #card_articles ul li h4 {
+  font-size: 1.1rem;
+}
 
 /*footer 흐르는글자*/
-footer .slider {white-space: nowrap; overflow:hidden; position:relative; width: 100%; margin:auto;border-top:solid 1px #000; border-bottom:solid 1px #000;}
+footer .slider {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  border-top: solid 1px #000;
+  border-bottom: solid 1px #000;
+}
 @keyframes scroll {
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(calc(-500px * 4));
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-500px * 4));
+  }
 }
-footer .slider .slide-track{
-    animation: scroll 30s linear infinite;
-    display: flex; justify-content: center; width: calc(420px * 8);
-    height:100%;
+footer .slider .slide-track {
+  animation: scroll 30s linear infinite;
+  display: flex;
+  justify-content: center;
+  width: calc(420px * 8);
+  height: 100%;
 }
-footer .slider .slide {white-space: nowrap; width: 500px; height:100%;}
-footer .slider .slide a{color:#fff; background-color: #000;}
+footer .slider .slide {
+  white-space: nowrap;
+  width: 500px;
+  height: 100%;
+}
+footer .slider .slide a {
+  color: #fff;
+  background-color: #000;
+}
 
 /*footer 정렬*/
-footer .footer_logo{background: #fff url(../images/ELLEblack.svg) no-repeat 50% / contain; text-indent: -9999px; width: 25vw; margin-top:40px;}
-footer .footer_info{display: flex; flex-wrap: wrap; font-size: 0.7rem; justify-content: center; margin:20px 0;}
-footer .footer_info li{margin:1vw 3vw;}
-footer .social_media{display: flex; justify-content: center;}
-
-@media screen and (min-width:768px) {
-    /*태블릿 버전*/
-    .font_imbue{font-size: 2.7rem;}
-
-    /*nav*/
-    nav{position:fixed; top:0; z-index: 10000;}
-    nav .pcNav{display: flex; justify-content: space-around; text-align: center; height: 28px; align-items: center; width: 60vw; padding:10px 0;border-bottom: 1px solid #000; background-color: #fff;}
-    nav .pcNav .slidesNav{display: none;}
-    nav .moNav{width: 40vw; right:0; align-items: center;}
-    nav .moNav .slideMenu{display: none;}
-    nav .moNav>li:nth-child(1){margin-left: auto;}
-
-    /*검색창*/
-    nav form{left: -150%;}
-
-    /*인트로*/
-    main #intro {display: flex; flex-flow: row wrap; margin-bottom:50px;}
-    main .articles{order:1; flex-flow: row wrap; align-items: flex-start; margin:50px 0 20px; justify-content: center;}
-    main #intro .articles h2{width: 100%;}
-    main .articles article{width: 32vw; display: flex; flex-direction: column; box-sizing: border-box; padding:0 2vw;}
-    main #intro .articles article:nth-child(3){border-left: #000 solid 1px; border-right:#000 solid 1px; }
-    main #intro .logo{order:2; margin:0 auto 40px;}
-    main #intro .weekly{order:3; margin:0 0 0 2.5vw; width: 22vw; box-sizing: border-box; border-right:1px solid #000; height: 48vh; padding-right:3vw; display: flex; flex-direction: column; justify-content: center;}
-    main #intro .weekly span{display: block;}
-    main #intro .swiper{order:4; width: 70vw; height:48vh; margin-right:2.5vw;}
-
-    /*뮤직 프로젝트*/
-    main #musicPj{flex-flow: wrap row;align-items: flex-start; justify-content: space-around;}
-    main #musicPj h2{width: 100%;}
-    main #musicPj article{width: 40%;}
-
-    /*별자리*/
-    main #contents{display: flex; flex-wrap: wrap; margin:50px 0 20px;}
-    main #contents .horoscope{width:59vw; margin:0; border-bottom:none; border-right: 1px solid #000; box-sizing: border-box; padding:40px 23px 40px 50px;}
-    main #contents .horoscope img{width:20vw; height: 20vw; box-sizing: border-box;}
-    main #contents .horos_expln{flex-direction: row; margin-top:20px}
-    main #contents .horos_expln .txt {margin-left: 30px;}
-    
-    /*모델, 에마 매키*/
-    main #contents article.fashion_1{width: 38vw; margin:0; box-sizing: border-box;padding: 0px 30px; display: flex; flex-direction: column;justify-content: center}
-    main #contents article.culture{margin-top:40px; padding-bottom:60px;}
-    main #contents article.culture a{width: 100%;}
-    main #contents article.culture h3{font-size: 1.3rem;}
-    main #contents article.culture h4{font-size: 1.5rem;}
-    main #contents article.culture p{font-size: 1.3rem;}
-
-    /*이준호*/
-    main #interlude{text-align: left; width: 90vw; margin:40px auto 80px;}
-    main #interlude .tagus42{font-size: 5.1rem;}
-    main #interlude article h4{font-size: 1.5rem;}
-    main #interlude article a:nth-child(3){width: 100%;}
-    main #interlude article p{font-size: 1.3rem;}
-
-    /*유튜브 영상*/
-    main #youtube{width: 90vw; margin: 0 auto;}
-    main #youtube p{font-size: 1.2rem;}
-
-    /*카드 article*/
-    main #card_articles{margin:70px 6vw; padding-bottom:40px; border-bottom:solid 1px #000;}
-    main #card_articles ul li{height:26vh;}
-    main #card_articles ul li h4{font-size:1.5rem;}
-    main #card_articles ul li .expln span{font-size: 1.3rem;}
-
-    /*footer 흐르는 글자*/
-    
-    footer .slider .slide {width: 640px; margin:20px 2vw;}
-    @keyframes scroll {
-        0%{
-            transform: translateX(0);
-        }
-        100%{
-            transform: translateX(calc(-640px * 4));
-        }
-    }
-    footer .slider .slide-track{width:calc(640 * 8);}
-
-    /*footer 정렬*/
-    footer .footer_logo{width:15vw;}
-    footer .footer_info li{margin:1vw 2vw;}
+footer .footer_logo {
+  background: #fff url(../images/ELLEblack.svg) no-repeat 50% / contain;
+  text-indent: -9999px;
+  width: 25vw;
+  margin-top: 40px;
+}
+footer .footer_info {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.7rem;
+  justify-content: center;
+  margin: 20px 0;
+}
+footer .footer_info li {
+  margin: 1vw 3vw;
+}
+footer .social_media {
+  display: flex;
+  justify-content: center;
 }
 
-@media screen and (min-width:1290px) {
+@media screen and (min-width: 768px) {
+  /*태블릿 버전*/
+  .font_imbue {
+    font-size: 2.7rem;
+  }
 
-    .tagus20{font-size: 1rem;}
-    .expln {font-size: 1.3rem;}
+  /*nav*/
+  nav {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+  }
+  nav .pcNav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 28px;
+    align-items: center;
+    width: 60vw;
+    padding: 10px 0;
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+  }
+  nav .pcNav .slidesNav {
+    display: none;
+  }
+  nav .moNav {
+    width: 40vw;
+    right: 0;
+    align-items: center;
+  }
+  nav .moNav .slideMenu {
+    display: none;
+  }
+  nav .moNav > li:nth-child(1) {
+    margin-left: auto;
+  }
 
-    /*nav 부분*/
-    nav {font-size: 1.6rem;}
-    nav a{transition: .3s;}
-    nav a:hover{color:red}
-    nav .moNav > li:nth-child(1):hover{font-weight: 600;}
-    nav .moNav>li span{font-size: 1.2rem;}
-    nav .moNav>li i{cursor: pointer;}
-    nav .pcNav{height:70px; transition: .3s;}
-    nav .pcNav, nav .moNav{color:#000; background-color: #fff;}
-    nav .pcNav.active, nav .moNav.active{height:40px;}
-    nav .pcNav>li{position:relative; width: 12vw;}
-    nav .moNav{height:70px; transition: .3s;}
-    nav .pcNav .slidesNav{display: block; position:absolute; top:25px; background-color: #fff; overflow: hidden; box-sizing:border-box; width: 12vw; border-right:1px solid #000;overflow: hidden; transition:.5s; z-index: -10; height: 0;}
-    nav .pcNav .slidesNav.show{ height:500px; top:45px; border-bottom:1px solid #000; padding-top:20px;}
-    nav .pcNav .slidesNav li{margin: 25px 0; font-size: 1.2rem; } 
-    nav form {top:91px; background-color: #000;}
-    nav form.searchSlide {height:50px;}
-    nav form.searchSlide.move {top:61px;}
-    nav form input {padding:20px; width :75%; background-color: #000; color:#fff;}
-    nav form button {width:55px; border-radius: 50%; margin-left: 20px; color: #000; background-color: #fff;}
+  /*검색창*/
+  nav form {
+    left: -150%;
+  }
 
-    main .articles{margin: 90px 0 60px;}
-    main .articles img{transition: .3s;}
-    main .articles a:hover img{transform: scale(1.1); opacity: 0.8;}
-    main .articles a{overflow: hidden;}
-    main #intro {margin-bottom:80px;}
-    main #intro .logo{margin-bottom:80px;}
-    main #intro .weekly .font_imbue{margin: 10px 0 20px;}
-    main #intro .weekly{height:60vh;}
-    main #intro .weekly a:hover img{transform: scale(1.1); opacity: 0.8;}
-    main #intro .weekly img{transition: .3s;}
-    main #intro .weekly a{overflow: hidden;}
-    main #intro .swiper{height:60vh;}
+  /*인트로*/
+  main #intro {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+  }
+  main .articles {
+    order: 1;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    margin: 50px 0 20px;
+    justify-content: center;
+  }
+  main #intro .articles h2 {
+    width: 100%;
+  }
+  main .articles article {
+    width: 32vw;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 2vw;
+  }
+  main #intro .articles article:nth-child(3) {
+    border-left: #000 solid 1px;
+    border-right: #000 solid 1px;
+  }
+  main #intro .logo {
+    order: 2;
+    margin: 0 auto 40px;
+  }
+  main #intro .weekly {
+    order: 3;
+    margin: 0 0 0 2.5vw;
+    width: 22vw;
+    box-sizing: border-box;
+    border-right: 1px solid #000;
+    height: 48vh;
+    padding-right: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main #intro .weekly span {
+    display: block;
+  }
+  main #intro .swiper {
+    order: 4;
+    width: 70vw;
+    height: 48vh;
+    margin-right: 2.5vw;
+  }
 
-    main #musicPj{justify-content: center;}
-    main #musicPj a{overflow: hidden;}
-    main #musicPj a img{transition: .3s;}
-    main #musicPj a:hover img{transform: scale(1.1);}
-    main #musicPj h2{font-size: 1.7rem; margin: 20px 0 30px;}
-    main #musicPj article{width:35%; margin: 40px 60px;}
-    main #musicPj h4{font-size: 1.3rem;}
+  /*뮤직 프로젝트*/
+  main #musicPj {
+    flex-flow: wrap row;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  main #musicPj h2 {
+    width: 100%;
+  }
+  main #musicPj article {
+    width: 40%;
+  }
 
-    
-    main #contents{margin:80px 0 60px;}
-    main #contents .horoscope{padding-right:60px; padding-left: 72px;}
-    main #contents .horoscope img{ width:13vw; height: 13vw;}
-    main #contents .horos_expln {margin-top:60px;}
-    main #contents .horos_expln #horos_name{font-size: 1rem;}
-    main #contents .horos_expln .txt p:nth-child(2){font-size: 1.2rem; margin: 30px 0;}
-    main #contents .horos_expln a{overflow: visible;}
-    main #contents .horos_expln a:hover img{transform: scale(1);}
-    main #contents .horos_expln .more{font-size: 1.1rem;}
+  /*별자리*/
+  main #contents {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0 20px;
+  }
+  main #contents .horoscope {
+    width: 59vw;
+    margin: 0;
+    border-bottom: none;
+    border-right: 1px solid #000;
+    box-sizing: border-box;
+    padding: 40px 23px 40px 50px;
+  }
+  main #contents .horoscope img {
+    width: 20vw;
+    height: 20vw;
+    box-sizing: border-box;
+  }
+  main #contents .horos_expln {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  main #contents .horos_expln .txt {
+    margin-left: 30px;
+  }
 
-    main #contents article.fashion_1{padding-left:60px;}
+  /*모델, 에마 매키*/
+  main #contents article.fashion_1 {
+    width: 38vw;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main #contents article.culture {
+    margin-top: 40px;
+    padding-bottom: 60px;
+  }
+  main #contents article.culture a {
+    width: 100%;
+  }
+  main #contents article.culture h3 {
+    font-size: 1.3rem;
+  }
+  main #contents article.culture h4 {
+    font-size: 1.5rem;
+  }
+  main #contents article.culture p {
+    font-size: 1.3rem;
+  }
 
-    main #contents article img{transition: .3s;}
-    main #contents article a{overflow: hidden;}
-    main #contents article a:hover img{transform: scale(1.1); opacity: 0.8;}
+  /*이준호*/
+  main #interlude {
+    text-align: left;
+    width: 90vw;
+    margin: 40px auto 80px;
+  }
+  main #interlude .tagus42 {
+    font-size: 5.1rem;
+  }
+  main #interlude article h4 {
+    font-size: 1.5rem;
+  }
+  main #interlude article a:nth-child(3) {
+    width: 100%;
+  }
+  main #interlude article p {
+    font-size: 1.3rem;
+  }
 
-    main #contents article.culture{margin-top: 60px; padding-bottom: 80px; display: flex; flex-wrap: wrap;}
-    main #contents article.culture a:nth-child(1){width:60%;}
-    main #contents article.culture .culture_wrapper{width: 40%; box-sizing: border-box; padding-left: 60px;}
-    main #contents article.culture h3{margin-bottom:15px;}
-    main #contents article.culture p{margin-top:15px;}
+  /*유튜브 영상*/
+  main #youtube {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  main #youtube p {
+    font-size: 1.2rem;
+  }
 
-    main #interlude article{display: flex; flex-wrap: wrap; margin-bottom:100px;}
-    main #interlude article h4{width:100%; margin:20px 0;}
-    main #interlude article p{margin-top:60px; font-size: 1.5rem;width:60%; box-sizing: border-box;}
-    main #interlude article a:nth-child(3){width: 40%;margin-left: auto;}
-    main #interlude article a{overflow: hidden;}
-    main #interlude article img{transition:.3s}
-    main #interlude article a:hover img{transform: scale(1.1); opacity: 0.8;}
+  /*카드 article*/
+  main #card_articles {
+    margin: 70px 6vw;
+    padding-bottom: 40px;
+    border-bottom: solid 1px #000;
+  }
+  main #card_articles ul li {
+    height: 26vh;
+  }
+  main #card_articles ul li h4 {
+    font-size: 1.5rem;
+  }
+  main #card_articles ul li .expln span {
+    font-size: 1.3rem;
+  }
 
-    main #youtube .video_box{display: flex; align-items: flex-start;}
-    main #youtube .video_box .video{width: 33.33vw; margin:10px;}
-    main #youtube p{font-size: 1.4rem;}
+  /*footer 흐르는 글자*/
 
-    main #card_articles{overflow: hidden;}
-    main #card_articles ul{position:relative; height: 390px ;width: 90vw;}
-    main #card_articles ul li{height:200px; width:33vw; position:absolute;}
-    main #card_articles ul li:nth-child(1){left: 0vw; background-color: #fff;}
-    main #card_articles ul li:nth-child(2){left: 15vw;}
-    main #card_articles ul li:nth-child(3){left:30vw;background-color: #fff;}
-    main #card_articles ul li:nth-child(4){left: 45vw;}
-    main #card_articles ul li img{width:9vw; height:9vw; margin:1vw 3vw 1vw 0;}
-    main #card_articles ul li .expln{padding:0;}
-    main #card_articles ul li>a{height: 84px;}
-
-
-
-    /*footer 흐르는 글자*/
-    footer .slider .slide {width:920px; font-size: 4.2rem; margin:20px 50px;}
-    footer .slider .slide-track{width:calc(640 * 8); animation-duration: 18s;}
-    @keyframes scroll {
-        0%{
-            transform: translateX(0);
-        }
-        100%{
-            transform: translateX(calc(-640px * 4));
-        }
+  footer .slider .slide {
+    width: 640px;
+    margin: 20px 2vw;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
     }
-    footer .slide-track:hover{animation-play-state: paused;}
-    footer .line a{transition: .3s;}
-    footer .line a:hover{background-color:red}
+    100% {
+      transform: translateX(calc(-640px * 4));
+    }
+  }
+  footer .slider .slide-track {
+    width: calc(640 * 8);
+  }
 
-    /*footer 정렬*/
-    footer .footer_info{font-size: 0.9rem;}
-    footer .social_media{font-size: 1.2rem; margin-bottom: 30px;}
-    
+  /*footer 정렬*/
+  footer .footer_logo {
+    width: 15vw;
+  }
+  footer .footer_info li {
+    margin: 1vw 2vw;
+  }
+}
 
+@media screen and (min-width: 1290px) {
+  .tagus20 {
+    font-size: 1rem;
+  }
+  .expln {
+    font-size: 1.3rem;
+  }
+
+  /*nav 부분*/
+  nav {
+    font-size: 1.6rem;
+  }
+  nav a {
+    transition: 0.3s;
+  }
+  nav a:hover {
+    color: red;
+  }
+  nav .moNav > li:nth-child(1):hover {
+    font-weight: 600;
+  }
+  nav .moNav > li span {
+    font-size: 1.2rem;
+  }
+  nav .moNav > li i {
+    cursor: pointer;
+  }
+  nav .pcNav {
+    height: 70px;
+    transition: 0.3s;
+  }
+  nav .pcNav,
+  nav .moNav {
+    color: #000;
+    background-color: #fff;
+  }
+  nav .pcNav.active,
+  nav .moNav.active {
+    height: 40px;
+  }
+  nav .pcNav > li {
+    position: relative;
+    width: 12vw;
+  }
+  nav .moNav {
+    height: 70px;
+    transition: 0.3s;
+  }
+  nav .pcNav .slidesNav {
+    display: block;
+    position: absolute;
+    top: 25px;
+    background-color: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 12vw;
+    border-right: 1px solid #000;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: -10;
+    height: 0;
+  }
+  nav .pcNav .slidesNav.show {
+    height: 500px;
+    top: 45px;
+    border-bottom: 1px solid #000;
+    padding-top: 20px;
+  }
+  nav .pcNav .slidesNav li {
+    margin: 25px 0;
+    font-size: 1.2rem;
+  }
+  nav form {
+    top: 91px;
+    background-color: #000;
+  }
+  nav form.searchSlide {
+    height: 50px;
+  }
+  nav form.searchSlide.move {
+    top: 61px;
+  }
+  nav form input {
+    padding: 20px;
+    width: 75%;
+    background-color: #000;
+    color: #fff;
+  }
+  nav form button {
+    width: 55px;
+    border-radius: 50%;
+    margin-left: 20px;
+    color: #000;
+    background-color: #fff;
+  }
+
+  main .articles {
+    margin: 90px 0 60px;
+  }
+  main .articles img {
+    transition: 0.3s;
+  }
+  main .articles a:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  main .articles a {
+    overflow: hidden;
+  }
+  main #intro {
+    margin-bottom: 80px;
+  }
+  main #intro .logo {
+    margin-bottom: 80px;
+  }
+  main #intro .weekly .font_imbue {
+    margin: 10px 0 20px;
+  }
+  main #intro .weekly {
+    height: 60vh;
+  }
+  main #intro .weekly a:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  main #intro .weekly img {
+    transition: 0.3s;
+  }
+  main #intro .weekly a {
+    overflow: hidden;
+  }
+  main #intro .swiper {
+    height: 60vh;
+  }
+
+  main #musicPj {
+    justify-content: center;
+  }
+  main #musicPj a {
+    overflow: hidden;
+  }
+  main #musicPj a img {
+    transition: 0.3s;
+  }
+  main #musicPj a:hover img {
+    transform: scale(1.1);
+  }
+  main #musicPj h2 {
+    font-size: 1.7rem;
+    margin: 20px 0 30px;
+  }
+  main #musicPj article {
+    width: 35%;
+    margin: 40px 60px;
+  }
+  main #musicPj h4 {
+    font-size: 1.3rem;
+  }
+
+  main #contents {
+    margin: 80px 0 60px;
+  }
+  main #contents .horoscope {
+    padding-right: 60px;
+    padding-left: 72px;
+  }
+  main #contents .horoscope img {
+    width: 13vw;
+    height: 13vw;
+  }
+  main #contents .horos_expln {
+    margin-top: 60px;
+  }
+  main #contents .horos_expln #horos_name {
+    font-size: 1rem;
+  }
+  main #contents .horos_expln .txt p:nth-child(2) {
+    font-size: 1.2rem;
+    margin: 30px 0;
+  }
+  main #contents .horos_expln a {
+    overflow: visible;
+  }
+  main #contents .horos_expln a:hover img {
+    transform: scale(1);
+  }
+  main #contents .horos_expln .more {
+    font-size: 1.1rem;
+  }
+
+  main #contents article.fashion_1 {
+    padding-left: 60px;
+  }
+
+  main #contents article img {
+    transition: 0.3s;
+  }
+  main #contents article a {
+    overflow: hidden;
+  }
+  main #contents article a:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+
+  main #contents article.culture {
+    margin-top: 60px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main #contents article.culture a:nth-child(1) {
+    width: 60%;
+  }
+  main #contents article.culture .culture_wrapper {
+    width: 40%;
+    box-sizing: border-box;
+    padding-left: 60px;
+  }
+  main #contents article.culture h3 {
+    margin-bottom: 15px;
+  }
+  main #contents article.culture p {
+    margin-top: 15px;
+  }
+
+  main #interlude article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+  }
+  main #interlude article h4 {
+    width: 100%;
+    margin: 20px 0;
+  }
+  main #interlude article p {
+    margin-top: 60px;
+    font-size: 1.5rem;
+    width: 60%;
+    box-sizing: border-box;
+  }
+  main #interlude article a:nth-child(3) {
+    width: 40%;
+    margin-left: auto;
+  }
+  main #interlude article a {
+    overflow: hidden;
+  }
+  main #interlude article img {
+    transition: 0.3s;
+  }
+  main #interlude article a:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+
+  main #youtube .video_box {
+    display: flex;
+    align-items: flex-start;
+  }
+  main #youtube .video_box .video {
+    width: 33.33vw;
+    margin: 10px;
+  }
+  main #youtube p {
+    font-size: 1.4rem;
+  }
+
+  main #card_articles {
+    overflow: hidden;
+  }
+  main #card_articles ul {
+    position: relative;
+    height: 390px;
+    width: 90vw;
+  }
+  main #card_articles ul li {
+    height: 200px;
+    width: 33vw;
+    position: absolute;
+  }
+  main #card_articles ul li:nth-child(1) {
+    left: 0vw;
+    background-color: #fff;
+  }
+  main #card_articles ul li:nth-child(2) {
+    left: 15vw;
+  }
+  main #card_articles ul li:nth-child(3) {
+    left: 30vw;
+    background-color: #fff;
+  }
+  main #card_articles ul li:nth-child(4) {
+    left: 45vw;
+  }
+  main #card_articles ul li img {
+    width: 9vw;
+    height: 9vw;
+    margin: 1vw 3vw 1vw 0;
+  }
+  main #card_articles ul li .expln {
+    padding: 0;
+  }
+  main #card_articles ul li > a {
+    height: 84px;
+  }
+
+  /*footer 흐르는 글자*/
+  footer .slider .slide {
+    width: 920px;
+    font-size: 4.2rem;
+    margin: 20px 50px;
+  }
+  footer .slider .slide-track {
+    width: calc(640 * 8);
+    animation-duration: 18s;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-640px * 4));
+    }
+  }
+  footer .slide-track:hover {
+    animation-play-state: paused;
+  }
+  footer .line a {
+    transition: 0.3s;
+  }
+  footer .line a:hover {
+    background-color: red;
+  }
+
+  /*footer 정렬*/
+  footer .footer_info {
+    font-size: 0.9rem;
+  }
+  footer .social_media {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
 }
